@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Author</key>
+		<string>J.R.R. Tolkien</string>
+		<key>Books</key>
+		<array>
+			<dict>
+				<key>URL</key>
+				<string>https://www.amazon.com/Hobbit-J-R-Tolkien/dp/054792822X</string>
+				<key>Cover</key>
+				<string>the-hobbit.jpg</string>
+				<key>Title</key>
+				<string>The Hobbit</string>
+				<key>Year</key>
+				<string>1937</string>
+				<key>googleAPILink</key>
+				<string>https://www.googleapis.com/books/v1/volumes/8SegnQEACAAJ</string>
+			</dict>
+			<dict>
+				<key>URL</key>
+				<string>https://www.amazon.com/Fellowship-Ring-Being-First-Rings/dp/0547928211/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1485745294&amp;sr=1-1&amp;keywords=the+fellowship+of+the+ring</string>
+				<key>Cover</key>
+				<string>fellowship.jpg</string>
+				<key>Title</key>
+				<string>The Fellowship of the Ring</string>
+				<key>Year</key>
+				<string>1954</string>
+				<key>googleAPILink</key>
+				<string>https://www.googleapis.com/books/v1/volumes/aWZzLPhY4o0C</string>
+			</dict>
+			<dict>
+				<key>URL</key>
+				<string>https://www.amazon.com/Two-Towers-Lord-Rings-Part/dp/0345339711</string>
+				<key>Cover</key>
+				<string>two-towers.jpg</string>
+				<key>Title</key>
+				<string>The Two Towers</string>
+				<key>Year</key>
+				<string>1954</string>
+				<key>googleAPILink</key>
+				<string>https://www.googleapis.com/books/v1/volumes/12e8PJ2T7sQC</string>
+			</dict>
+			<dict>
+				<key>URL</key>
+				<string>https://www.amazon.com/Return-King-Lord-Rings-Part/dp/0345339738</string>
+				<key>Cover</key>
+				<string>return-king.jpg</string>
+				<key>Title</key>
+				<string>The Return of the King</string>
+				<key>Year</key>
+				<string>1955</string>
+				<key>googleAPILink</key>
+				<string>https://www.googleapis.com/books/v1/volumes/wyak3_NWKZsC</string>
+			</dict>
+			<dict>
+				<key>URL</key>
+				<string>https://www.amazon.com/Bilbos-Last-Song-J-R-R-Tolkien/dp/0375823735</string>
+				<key>Cover</key>
+				<string>bilbo-song.png</string>
+				<key>Title</key>
+				<string>Bilbo&apos;s Last Song</string>
+				<key>Year</key>
+				<string>1966</string>
+				<key>googleAPILink</key>
+				<string>https://www.googleapis.com/books/v1/volumes/-A8zV0lVfEYC</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Author</key>
+		<string>Dan Brown</string>
+		<key>Books</key>
+		<array>
+			<dict>
+				<key>URL</key>
+				<string>https://www.amazon.com/Digital-Fortress-Thriller-Dan-Brown/dp/0312944926</string>
+				<key>Cover</key>
+				<string>digital-fortress.jpg</string>
+				<key>Title</key>
+				<string>Digital Fortress</string>
+				<key>Year</key>
+				<string>1998</string>
+				<key>googleAPILink</key>
+				<string>https://www.googleapis.com/books/v1/volumes/_FKPcZcTKNMC</string>
+			</dict>
+			<dict>
+				<key>URL</key>
+				<string>https://www.amazon.com/Angels-Demons-Novel-Robert-Langdon/dp/074349346X</string>
+				<key>Cover</key>
+				<string>angels-demons.jpg</string>
+				<key>Title</key>
+				<string>Angels and Demons</string>
+				<key>Year</key>
+				<string>2000</string>
+				<key>googleAPILink</key>
+				<string>https://www.googleapis.com/books/v1/volumes/N_2gqkJhnX0C</string>
+			</dict>
+			<dict>
+				<key>URL</key>
+				<string>https://www.amazon.com/Deception-Point-Dan-Brown/dp/1416524800</string>
+				<key>Cover</key>
+				<string>deception-point.jpg</string>
+				<key>Title</key>
+				<string>Deception Point</string>
+				<key>Year</key>
+				<string>2001</string>
+				<key>googleAPILink</key>
+				<string>https://www.googleapis.com/books/v1/volumes/BjFZ0UQOUCgC</string>
+			</dict>
+			<dict>
+				<key>URL</key>
+				<string>https://www.amazon.com/Vinci-Code-Dan-Brown/dp/0307474275</string>
+				<key>Cover</key>
+				<string>da-vinci-code.jpg</string>
+				<key>Title</key>
+				<string>The Da Vinci Code</string>
+				<key>Year</key>
+				<string>2003</string>
+				<key>googleAPILink</key>
+				<string>https://www.googleapis.com/books/v1/volumes/pbluAwAAQBAJ</string>
+			</dict>
+			<dict>
+				<key>URL</key>
+				<string>https://www.amazon.com/Lost-Symbol-Dan-Brown/dp/1400079144</string>
+				<key>Cover</key>
+				<string>lost-symbol.jpg</string>
+				<key>Title</key>
+				<string>The Lost Symbol</string>
+				<key>Year</key>
+				<string>2009</string>
+				<key>googleAPILink</key>
+				<string>https://www.googleapis.com/books/v1/volumes/tCqI98qnVrcC</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Author</key>
+		<string>J.K. Rowling</string>
+		<key>Books</key>
+		<array>
+			<dict>
+				<key>URL</key>
+				<string>https://www.amazon.com/Harry-Potter-Sorcerers-Stone-Rowling/dp/059035342X</string>
+				<key>Cover</key>
+				<string>stone.jpg</string>
+				<key>Title</key>
+				<string>Harry Potter and the Philosopher&apos;s Stone</string>
+				<key>Year</key>
+				<string>1997</string>
+				<key>googleAPILink</key>
+				<string>https://www.googleapis.com/books/v1/volumes/wrOQLV6xB-wC</string>
+			</dict>
+			<dict>
+				<key>URL</key>
+				<string>https://www.amazon.com/Harry-Potter-Chamber-Secrets-Rowling/dp/0439064872</string>
+				<key>Cover</key>
+				<string>chamber.jpg</string>
+				<key>Title</key>
+				<string>Harry Potter and the Chamber of Secrets</string>
+				<key>Year</key>
+				<string>1998</string>
+				<key>googleAPILink</key>
+				<string>https://www.googleapis.com/books/v1/volumes/5iTebBW-w7QC</string>
+			</dict>
+			<dict>
+				<key>URL</key>
+				<string>https://www.amazon.com/Harry-Potter-Prisoner-Azkaban-Rowling/dp/0439136369</string>
+				<key>Cover</key>
+				<string>azkaban.jpg</string>
+				<key>Title</key>
+				<string>Harry Potter and the Prisoner of Azkaban</string>
+				<key>Year</key>
+				<string>1999</string>
+				<key>googleAPILink</key>
+				<string>https://www.googleapis.com/books/v1/volumes/S5WtygAACAAJ</string>
+			</dict>
+			<dict>
+				<key>URL</key>
+				<string>https://www.amazon.com/Harry-Potter-Goblet-Fire-Rowling/dp/0439139600</string>
+				<key>Cover</key>
+				<string>goblet.jpg</string>
+				<key>Title</key>
+				<string>Harry Potter and the Goblet of Fire</string>
+				<key>Year</key>
+				<string>2000</string>
+				<key>googleAPILink</key>
+				<string>https://www.googleapis.com/books/v1/volumes/6mcSnwEACAAJ</string>
+			</dict>
+			<dict>
+				<key>URL</key>
+				<string>https://www.amazon.com/Harry-Potter-Order-Phoenix-Rowling/dp/0439358078</string>
+				<key>Cover</key>
+				<string>phoenix.jpg</string>
+				<key>Title</key>
+				<string>Harry Potter and the Order of the Phoenix</string>
+				<key>Year</key>
+				<string>2003</string>
+				<key>googleAPILink</key>
+				<string>https://www.googleapis.com/books/v1/volumes/IMP0BgAAQBAJ</string>
+			</dict>
+			<dict>
+				<key>URL</key>
+				<string>https://www.amazon.com/Harry-Potter-Order-Phoenix-Rowling/dp/0439358078</string>
+				<key>Cover</key>
+				<string>prince.jpg</string>
+				<key>Title</key>
+				<string>Harry Potter and the Half Blood Prince</string>
+				<key>Year</key>
+				<string>2005</string>
+				<key>googleAPILink</key>
+				<string>https://www.googleapis.com/books/v1/volumes/7XYIRgAACAAJ</string>
+			</dict>
+			<dict>
+				<key>URL</key>
+				<string>https://www.amazon.com/Harry-Potter-Deathly-Hallows-Book/dp/0545139708</string>
+				<key>Cover</key>
+				<string>hallows.jpg</string>
+				<key>Title</key>
+				<string>Harry Potter and the Deathly Hallows</string>
+				<key>Year</key>
+				<string>2007</string>
+				<key>googleAPILink</key>
+				<string>https://www.googleapis.com/books/v1/volumes/_oaAHiFOZmgC</string>
+			</dict>
+			<dict>
+				<key>URL</key>
+				<string>https://www.amazon.com/Tales-Beedle-Standard-Harry-Potter/dp/0545128285</string>
+				<key>Cover</key>
+				<string>bard.jpg</string>
+				<key>Title</key>
+				<string>The Tales of Beedle the Bard</string>
+				<key>Year</key>
+				<string>2008</string>
+				<key>googleAPILink</key>
+				<string>https://www.googleapis.com/books/v1/volumes/6xpePwAACAAJ</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>
