@@ -7,8 +7,6 @@
 //
 
 import Foundation
-import Kanna
-import Alamofire
 import UIKit
 
 class Books {
