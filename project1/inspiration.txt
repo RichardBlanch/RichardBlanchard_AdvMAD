@@ -1,0 +1,10 @@
+Inspiration:
+The inspiration for my app comes from the fact that I love to workout. However, my main problem with working out is I can never find a workout or workout plan that I like for a given day. When I go to the gym my workout is typically created on the spot and it demotivates me. When this happens I find myself having a horrendous workout and leaving the gym quickly. My solution is to create an app which will curate workout for the user. Going to the gym and need to workout your legs? The app will pull up multiple workouts custom leg workouts that the user can then use. Want a volume leg-workout? The app will pull it up. The workouts should be filterable and easy to search through. I also hate using my phone when I workout so if I could implement a watch version of the app that would be ideal. It may be a little bit out of the scope of this class, but we shall see.
+
+Goal:
+The goal of my app is to create a ton of workouts for the user. I want the user to always have something new and exciting to do when they enter the gym. I think it would also be cool to onboard trainers in the fitness industry and have them put their workout plans on the app. For instance they could include their meal plans and whatever else they include in their workout plan. However, this may be a little out of the scope of the project for now as well. To start, I want to create a feed of workouts which the user can filter to the kind of workout they want to do for that day. Once a few workouts match, I want the user to be able to click on the workout and specifically see what that workout entails, once the user says they are done, the workout should save and they should be able to edit what they did. For instance if the workout involved bench press for 5 sets of 5 reps, they should be able to include the weight they did for those reps.
+
+Intended Audience:
+The intended audience is anyone like me who feels unmotivated when they go to the gym without a plan and also doesn’t want to spend money to gain access to workouts. 
+
+
