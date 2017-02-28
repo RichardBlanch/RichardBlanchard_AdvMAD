@@ -1,5 +1,97 @@
-Content:
-I will need a tableview to display the data in the workout feed and then a detail view controller for the workout once a user clicks the workout they like. I will need images for the workout. I will also need to use a PageViewController if I include workout plans because the user will need to flip through the days and months, but the workout days will probably use the same WorkoutDetailViewController. It might also be cool to display the workout plans in a cool CollectionViewFlowLayout. I really like the Ibooks layout and could put workout plans in a bookshelf like layout. Either way, I think it would look cool.
+#!/usr/bin/ruby
+require 'fastimage'
+require 'net/http'
+require 'json'
 
-Data:
-The problem with this app comes down to data. There isn’t really any good workout APIs I can use to grab workouts and display them. However, I am familiar with building APIs with Ruby on Rails. So, I will either manually enter a bunch of workouts and add them to my created API, or I will scrape websites and then automatically enter them into the API after the scrape. I have already built some of this API and it is pretty simple because I am just trying to show workouts. After this API is built, my app will grab the data from the API and display its data within the app.
+
+
+
+puts 'Enter workout name'
+name = gets.chomp
+
+puts 'Enter Workout Creator'
+creator_data = gets.chomp
+
+puts 'Enter Image URL'
+main_image_url_data = gets.chomp
+main_image_size= FastImage.size(main_image_url_data, :raise_on_failure => true)
+main_image_width_data = main_image_size.first
+main_image_height_data = main_image_size.last
+
+puts 'Enter Workout Type'
+workout_type_data = gets.chomp
+
+puts 'Enter Other Workout Information'
+workout_other_information_data = gets.chomp
+
+
+
+
+uri = URI('http://localhost:3000/api/v1/workouts')
+req = Net::HTTP::Post.new(uri, 'Content-Type' => 'application/json')
+req.body = {"workout"=> {"creator"=> creator_data, "name"=> name, "main_image_url"=> main_image_url_data, "main_image_width"=> main_image_width_data, "main_image_height"=> main_image_height_data, "workout_type"=> workout_type_data, "workout_other_information"=> workout_other_information_data}}.to_json
+res = Net::HTTP.start(uri.hostname, uri.port) do |http|
+  http.request(req)
+end
+
+url = "http://localhost:3000/api/v1/workouts"
+uri = URI(url)
+response = Net::HTTP.get(uri)
+count_of_workout = JSON.parse(response).last["id"]
+puts "The Last workout is " + count_of_workout.to_s
+
+
+puts "Enter Number Of MasterSets"
+$master_set_count = gets.to_i
+$a = 0
+
+while $a < $master_set_count
+	puts "Enter Amount Of Entities for Given MasterSet"
+	entities = gets.to_i
+	uri = URI('http://localhost:3000/api/v1/master_sets')
+	req = Net::HTTP::Post.new(uri, 'Content-Type' => 'application/json')
+	req.body = {"workout_id"=> count_of_workout }.to_json
+	res = Net::HTTP.start(uri.hostname, uri.port) do |http|
+  	http.request(req)
+	end
+	$i = 0
+	$num = entities
+	url = "http://localhost:3000/api/v1/master_sets"
+	uri = URI(url)
+	response = Net::HTTP.get(uri)
+	count_of_master_set = JSON.parse(response).last["id"]
+	puts "The ID is" + count_of_master_set.to_s
+
+	while $i < $num  do
+		puts "Enter an entity name"
+		workout_name_entity = gets.chomp
+		puts "Enter entity reps"
+		workout_reps_entity = gets.chomp
+		puts "Enter workout sets, if comma seperated, enter empty"
+		workout_sets_entity = gets.chomp
+		uri = URI('http://localhost:3000/api/v1/entities')
+		req = Net::HTTP::Post.new(uri, 'Content-Type' => 'application/json')
+		req.body = {"name" => workout_name_entity, "reps" => workout_reps_entity, "sets" => workout_sets_entity, "master_set_id" => count_of_master_set }.to_json
+		res = Net::HTTP.start(uri.hostname, uri.port) do |http|
+  		http.request(req)
+		end
+		
+		
+   		$i +=1
+	end
+	$a +=1
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
