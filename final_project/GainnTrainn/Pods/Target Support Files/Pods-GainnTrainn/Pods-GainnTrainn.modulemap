@@ -1,0 +1,6 @@
+framework module Pods_GainnTrainn {
+  umbrella header "Pods-GainnTrainn-umbrella.h"
+
+  export *
+  module * { export * }
+}

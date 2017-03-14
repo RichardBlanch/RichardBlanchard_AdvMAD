@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="15G1217" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Dates" representedClassName=".Dates" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="fromWorkout" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Workout" inverseName="forDates" inverseEntity="Workout" syncable="YES"/>
+    </entity>
+    <entity name="Exercise" representedClassName=".Exercise" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reps" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sets" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="masterSet" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MasterSet" inverseName="exercises" inverseEntity="MasterSet" syncable="YES"/>
+    </entity>
+    <entity name="MasterSet" representedClassName=".MasterSet" syncable="YES">
+        <relationship name="exercises" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Exercise" inverseName="masterSet" inverseEntity="Exercise" syncable="YES"/>
+        <relationship name="workout" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Workout" inverseName="masterSets" inverseEntity="Workout" syncable="YES"/>
+    </entity>
+    <entity name="Workout" representedClassName=".Workout" syncable="YES">
+        <attribute name="bodyType" attributeType="String" syncable="YES"/>
+        <attribute name="creator" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="imageHeight" attributeType="Integer 16" defaultValueString="200" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="imageURL" attributeType="String" syncable="YES"/>
+        <attribute name="imageWidth" attributeType="Integer 16" defaultValueString="200" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mainImage" optional="YES" attributeType="Transformable" valueTransformerName="ImageTransformer" customClassName="." syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="forDates" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Dates" inverseName="fromWorkout" inverseEntity="Dates" syncable="YES"/>
+        <relationship name="masterSets" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="MasterSet" inverseName="workout" inverseEntity="MasterSet" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Exercise" positionX="-18" positionY="90" width="128" height="105"/>
+        <element name="MasterSet" positionX="-36" positionY="63" width="128" height="75"/>
+        <element name="Workout" positionX="-54" positionY="-9" width="128" height="195"/>
+        <element name="Dates" positionX="-36" positionY="81" width="128" height="75"/>
+    </elements>
+</model>

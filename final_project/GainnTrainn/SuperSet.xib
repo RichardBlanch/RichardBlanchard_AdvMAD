@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner">
+            <connections>
+                <outlet property="exerciseLabelSecond" destination="QVc-70-yCO" id="aJu-17-XXc"/>
+                <outlet property="repsLabelFirst" destination="bqP-KJ-MJ9" id="lTz-N1-p0j"/>
+                <outlet property="repsLabelSecond" destination="5hf-0Z-8FJ" id="5xF-5d-fwe"/>
+                <outlet property="setsLabelSecond" destination="VB3-CI-z2e" id="ckI-PQ-4ae"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SuperSetView" customModule="GainnTrainn" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" tag="200" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utw-K5-Kda" userLabel="Sets1">
+                    <rect key="frame" x="8" y="48" width="359" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="133" id="OZS-4T-m1G"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workout Name" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elm-xa-pap" userLabel="Workout Name 1">
+                    <rect key="frame" x="8" y="20" width="359" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="133" id="Eff-iW-2RW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="300" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqP-KJ-MJ9" userLabel="Reps 1">
+                    <rect key="frame" x="8" y="81.5" width="359" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="133" id="Ive-l7-V2e"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="2000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VB3-CI-z2e" userLabel="Sets2">
+                    <rect key="frame" x="8" y="158" width="359" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="133" id="j7b-qa-8vy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workout Name" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVc-70-yCO" userLabel="Workout Name 2">
+                    <rect key="frame" x="8" y="127" width="359" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="3000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hf-0Z-8FJ" userLabel="Reps 2">
+                    <rect key="frame" x="8" y="191.5" width="359" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="133" id="7ML-VG-SXc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SZK-3C-f6N">
+                    <rect key="frame" x="8" y="213" width="359" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Y8P-Dc-KSi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VB3-CI-z2e" firstAttribute="trailing" secondItem="QVc-70-yCO" secondAttribute="trailing" id="3Ok-Ge-H7Y"/>
+                <constraint firstItem="VB3-CI-z2e" firstAttribute="leading" secondItem="QVc-70-yCO" secondAttribute="leading" id="3PE-qS-37w"/>
+                <constraint firstItem="5hf-0Z-8FJ" firstAttribute="leading" secondItem="VB3-CI-z2e" secondAttribute="leading" id="4jI-6b-j35"/>
+                <constraint firstItem="bqP-KJ-MJ9" firstAttribute="top" secondItem="utw-K5-Kda" secondAttribute="bottom" constant="13" id="57p-tg-F0C"/>
+                <constraint firstAttribute="trailing" secondItem="SZK-3C-f6N" secondAttribute="trailing" constant="8" id="FMQ-kt-ZG1"/>
+                <constraint firstItem="elm-xa-pap" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="I0N-Cb-ubx"/>
+                <constraint firstItem="elm-xa-pap" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="NId-mH-xyI"/>
+                <constraint firstItem="QVc-70-yCO" firstAttribute="leading" secondItem="bqP-KJ-MJ9" secondAttribute="leading" id="OKA-ze-jCe"/>
+                <constraint firstItem="bqP-KJ-MJ9" firstAttribute="trailing" secondItem="utw-K5-Kda" secondAttribute="trailing" id="U59-vf-ake"/>
+                <constraint firstItem="QVc-70-yCO" firstAttribute="trailing" secondItem="bqP-KJ-MJ9" secondAttribute="trailing" id="W8v-wE-R3r"/>
+                <constraint firstItem="utw-K5-Kda" firstAttribute="leading" secondItem="elm-xa-pap" secondAttribute="leading" id="XoY-np-7ZC"/>
+                <constraint firstItem="bqP-KJ-MJ9" firstAttribute="leading" secondItem="utw-K5-Kda" secondAttribute="leading" id="ZFJ-7P-vbq"/>
+                <constraint firstItem="5hf-0Z-8FJ" firstAttribute="top" secondItem="VB3-CI-z2e" secondAttribute="bottom" constant="13" id="a5m-Si-bCV"/>
+                <constraint firstItem="SZK-3C-f6N" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="ax0-US-I74"/>
+                <constraint firstItem="QVc-70-yCO" firstAttribute="top" secondItem="bqP-KJ-MJ9" secondAttribute="bottom" constant="25" id="bov-8C-mbs"/>
+                <constraint firstAttribute="trailing" secondItem="elm-xa-pap" secondAttribute="trailing" constant="8" id="cP3-ho-7Ka"/>
+                <constraint firstItem="5hf-0Z-8FJ" firstAttribute="trailing" secondItem="VB3-CI-z2e" secondAttribute="trailing" id="eJT-qI-jma"/>
+                <constraint firstItem="VB3-CI-z2e" firstAttribute="top" secondItem="QVc-70-yCO" secondAttribute="bottom" constant="13" id="gqM-jg-MMb"/>
+                <constraint firstItem="utw-K5-Kda" firstAttribute="trailing" secondItem="elm-xa-pap" secondAttribute="trailing" id="vNr-Ke-CZ2"/>
+                <constraint firstItem="SZK-3C-f6N" firstAttribute="top" secondItem="5hf-0Z-8FJ" secondAttribute="bottom" constant="1" id="wED-vc-QCK"/>
+                <constraint firstItem="utw-K5-Kda" firstAttribute="top" secondItem="elm-xa-pap" secondAttribute="bottom" constant="10" id="xb7-3q-uk7"/>
+            </constraints>
+            <connections>
+                <outlet property="exerciseLabelFirst" destination="elm-xa-pap" id="tHZ-xG-VpC"/>
+                <outlet property="setsLabelFirst" destination="utw-K5-Kda" id="kff-av-83W"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="112.5"/>
+        </view>
+    </objects>
+</document>

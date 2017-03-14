@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>JTCalendar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-GainnTrainn.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-GainnTrainnWatch Extension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-GainnTrainnWatch.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>91D0AFD51BF2D04784321D0DCD086326</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C36BCC5D18AFA729BC3A733F1CAFAAE3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D1C47140488D1C242CE7ADBBBB98691A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F79062FE46986DC42751D96BF828A672</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
