@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SkiResorts: NSObject {
+class SkiResorts: NSObject,NSCoding {
     var runs: [Runs]?
     var name: String!
     var url: String!
@@ -29,9 +29,18 @@ class SkiResorts: NSObject {
         aCoder.encode(runs, forKey: "runs")
     }
     class func initializeResorts()->[SkiResorts] {
-        let trestle = Runs(nameOfRun: "Trestle")
-        let outhouse = Runs(nameOfRun: "Outhouse")
-        return [SkiResorts(runs: [trestle,outhouse], name: "Winter Park", url: "https://www.snow.com/"), SkiResorts(runs: [trestle,outhouse], name: "Aspen", url: "https://www.aspensnowmass.com/"), SkiResorts(runs: [trestle,outhouse], name: "Eldora", url:"https://www.eldora.com/"), SkiResorts(runs: [trestle,outhouse], name: "Steamboat",url:"https://www.steamboat.com/")]
+        
+        if let data = UserDefaults.standard.object(forKey: "newResorts") {
+            let resorts = NSKeyedUnarchiver.unarchiveObject(with: data as! Data) as! [SkiResorts]
+            return resorts
+        }
+            let trestle = Runs(nameOfRun: "Trestle")
+            let outhouse = Runs(nameOfRun: "Outhouse")
+            return [SkiResorts(runs: [trestle,outhouse], name: "Winter Park", url: "https://www.snow.com/"), SkiResorts(runs: [trestle,outhouse], name: "Aspen", url: "https://www.aspensnowmass.com/"), SkiResorts(runs: [trestle,outhouse], name: "Eldora", url:"https://www.eldora.com/"), SkiResorts(runs: [trestle,outhouse], name: "Steamboat",url:"https://www.steamboat.com/")]
+        
+     
+        
         
     }
+    
 }

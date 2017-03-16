@@ -8,18 +8,26 @@
 
 import UIKit
 
-class Runs: NSObject {
+class Runs: NSObject,NSCoding {
     var nameOfRun:String!
+    let kName = "nameOfRun"
     
     init(nameOfRun:String) {
         self.nameOfRun = nameOfRun
     }
+    init(name:String) {
+        
+        self.nameOfRun = name
+    }
     required convenience init(coder aDecoder: NSCoder) {
         let name = aDecoder.decodeObject(forKey: "nameOfRun") as! String
-        self.init(nameOfRun: name)
+        self.init(
+            name: name
+        )
     }
     func encode(with aCoder: NSCoder) {
-        aCoder.encode(nameOfRun, forKey: "nameOfRun")
+        aCoder.encode(nameOfRun, forKey: kName)
+       
     }
 
 }

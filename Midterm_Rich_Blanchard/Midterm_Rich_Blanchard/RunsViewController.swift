@@ -23,6 +23,7 @@ class RunsViewController: UITableViewController {
             let newRunText = firstTextField.text
             let newRun = Runs(nameOfRun: newRunText!)
             self.skiResortSelected.runs?.append(newRun)
+             self.changeRuns()
             DispatchQueue.main.async { [weak self] in
                 self?.tableView.reloadData()
             }
@@ -76,13 +77,22 @@ class RunsViewController: UITableViewController {
             skiResortSelected.runs?.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
+        self.changeRuns()
     }
     override func viewDidLoad() {
         setUpSearchController()
     }
-    override func viewDidDisappear(_ animated: Bool) {
-        let runs = skiResortSelected
-        let encodedData = NSKeyedArchiver.archivedData(withRootObject: runs)
-        print("encodedData: \(encodedData))")
+    func changeRuns() {
+        var newResorts = SkiResorts.initializeResorts()
+        var i = 0
+        for resort in SkiResorts.initializeResorts() {
+            if resort.name == self.skiResortSelected.name {
+                newResorts[i].runs = self.skiResortSelected.runs
+            }
+            i += 1
+        }
+        let encodedData = NSKeyedArchiver.archivedData(withRootObject: newResorts)
+        UserDefaults.standard.set(encodedData, forKey: "newResorts")
+        UserDefaults.standard.synchronize()
     }
 }
