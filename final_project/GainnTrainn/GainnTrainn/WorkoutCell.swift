@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class FeedCell: UITableViewCell {
     @IBOutlet weak var descriptionText: UITextView!
@@ -17,17 +18,15 @@ class FeedCell: UITableViewCell {
     @IBOutlet weak var logoImage: UIImageView!
     @IBOutlet weak var retailerNameLabel: UILabel!
     @IBOutlet weak var offerTitleLabel: UILabel!
-    var workoutImage:UIImage! {
-        didSet {
-            mainImage.image = workoutImage
-        }
-    }
     var universalUIElements = UniversalUIElements()
     var workout:Workout! {
         didSet {
             retailerNameLabel.text = workout.name
             offerTitleLabel.text = workout.creator
             descriptionText.text = workout.bodyType
+            if let url = URL(string:workout.imageURL ?? "") {
+                mainImage.kf.setImage(with: url)
+            }
         }
     }
 

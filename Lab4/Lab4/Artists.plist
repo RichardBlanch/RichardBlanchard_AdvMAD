@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>80s</key>
+		<array>
+			<string>David Bowie</string>
+			<string>U2</string>
+			<string>Guns N Roses</string>
+			<string>Price</string>
+			<string>Michael Jackson</string>
+		</array>
+		<key>90s</key>
+		<array>
+			<string>Mariah Carey</string>
+			<string>Nirvana</string>
+			<string>Pearl Jam</string>
+			<string>Whitney Houston</string>
+			<string>Radiohead</string>
+			<string>Madonna</string>
+		</array>
+	</dict>
+</array>
+</plist>

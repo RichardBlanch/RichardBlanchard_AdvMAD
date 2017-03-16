@@ -18,6 +18,7 @@
 		8146AB031E71D4C30037CB7C /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8146AB021E71D4C30037CB7C /* CalendarViewController.swift */; };
 		8146AB051E71D79F0037CB7C /* VerticalCalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8146AB041E71D79F0037CB7C /* VerticalCalendarView.xib */; };
 		8146AB091E733D760037CB7C /* EventKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8146AB081E733D760037CB7C /* EventKitHelper.swift */; };
+		814CB8891E788F3200C96E19 /* WorkoutHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 814CB8881E788F3200C96E19 /* WorkoutHeaderView.xib */; };
 		81835C9A1E5AA02500928E49 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81835C981E5AA02500928E49 /* Interface.storyboard */; };
 		81835C9C1E5AA02500928E49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81835C9B1E5AA02500928E49 /* Assets.xcassets */; };
 		81835CA31E5AA02600928E49 /* GainnTrainnWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 81835CA21E5AA02600928E49 /* GainnTrainnWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -110,6 +111,7 @@
 		8146AB021E71D4C30037CB7C /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		8146AB041E71D79F0037CB7C /* VerticalCalendarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VerticalCalendarView.xib; sourceTree = "<group>"; };
 		8146AB081E733D760037CB7C /* EventKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventKitHelper.swift; sourceTree = "<group>"; };
+		814CB8881E788F3200C96E19 /* WorkoutHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkoutHeaderView.xib; sourceTree = "<group>"; };
 		81835C961E5AA02500928E49 /* GainnTrainnWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GainnTrainnWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81835C991E5AA02500928E49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		81835C9B1E5AA02500928E49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				8107E3861E5CEC2F004AF74F /* WorkoutFilterByCollectionViewCell.swift */,
 				8107C1BF1E6672DA002EA6C4 /* RemoveAll.swift */,
 				8146AB041E71D79F0037CB7C /* VerticalCalendarView.xib */,
+				814CB8881E788F3200C96E19 /* WorkoutHeaderView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81BF6E8E1E5651F100DEC8D9 /* LaunchScreen.storyboard in Resources */,
+				814CB8891E788F3200C96E19 /* WorkoutHeaderView.xib in Resources */,
 				81BF6E8B1E5651F100DEC8D9 /* Assets.xcassets in Resources */,
 				8146AB051E71D79F0037CB7C /* VerticalCalendarView.xib in Resources */,
 				81BF6E891E5651F100DEC8D9 /* Main.storyboard in Resources */,

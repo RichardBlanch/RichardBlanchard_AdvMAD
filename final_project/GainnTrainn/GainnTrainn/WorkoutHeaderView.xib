@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WorkoutHeaderView" customModule="GainnTrainn" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFill" id="ZaO-wB-qMu">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="200" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="smL-8D-yDm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="smL-8D-yDm" firstAttribute="leading" secondItem="ZaO-wB-qMu" secondAttribute="leading" id="U7z-TR-agC"/>
+                <constraint firstItem="smL-8D-yDm" firstAttribute="top" secondItem="ZaO-wB-qMu" secondAttribute="top" id="W4h-uV-eBH"/>
+                <constraint firstAttribute="trailing" secondItem="smL-8D-yDm" secondAttribute="trailing" id="Zoi-kT-h6U"/>
+                <constraint firstAttribute="bottom" secondItem="smL-8D-yDm" secondAttribute="bottom" id="wxs-zg-Hy7"/>
+            </constraints>
+            <point key="canvasLocation" x="94.5" y="65.5"/>
+        </view>
+    </objects>
+</document>

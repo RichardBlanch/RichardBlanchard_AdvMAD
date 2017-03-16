@@ -69,8 +69,11 @@ class GainTrainAPIHelper: NSObject {
                             }
                             workoutsManagedArray.append(workoutManagedObject)
                         }
-                        self.workoutService.coreDataStack.saveContext()
-                       self.delegate?.fetchedWorkoutsWithIDsThatCoreDataDidNotHave(workouts: workoutsManagedArray)
+                        DispatchQueue.main.async { [weak self] in
+                             self?.workoutService.coreDataStack.saveContext()
+                            self?.delegate?.fetchedWorkoutsWithIDsThatCoreDataDidNotHave(workouts: workoutsManagedArray)
+                        }
+                       
                         
                     }
                 }
@@ -83,7 +86,7 @@ class GainTrainAPIHelper: NSObject {
         }.resume()
     }
     private func getWhereClause(fromWorkouts workouts:[Workout])->(whereClause:String?,fetchAllWorkoutsInstead:Bool) {
-        let ids = workouts.map {$0.id}
+        let ids = workouts.map {$0.workoutId}
         var whereClause = ""
         for i in 0..<ids.count {
             if i == ids.count - 1 {

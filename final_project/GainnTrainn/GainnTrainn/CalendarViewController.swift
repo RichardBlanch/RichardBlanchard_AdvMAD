@@ -9,10 +9,16 @@
 import UIKit
 import JTCalendar
 import EventKit
+import DZNEmptyDataSet
 
 class CalendarViewController: UIViewController {
     var datesForWorkout:Dictionary<String,Array<Date>>!
-    var dateFormatter:DateFormatter!
+    lazy var dateFormatter:DateFormatter = {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd-MM-yyyy";
+        return dateFormatter
+        
+    }()
     var workoutsForDate = [Workout]() {
         willSet {
             DispatchQueue.main.async { [weak self] in
@@ -70,7 +76,20 @@ class CalendarViewController: UIViewController {
 
     @IBAction func addEventsToCalendar(_ sender: UIBarButtonItem) {
         if let dateSelected = dateSelected {
-            Alerter.alertForCalendar(withTitle: "Add Workout?", withMessage: "Would you like to add this workout to your calendar?", fromViewController: self, forDateSelected: dateSelected, workoutToPotentiallyAdd: workoutSelected)
+            Alerter.alertForCalendar(withTitle: "Add \(workoutSelected.name ?? "Workout")", withMessage: "Add Workout To Calendar?", fromViewController: self, forDateSelected: dateSelected, workoutToPotentiallyAdd: workoutSelected, completionHandler: {[weak self] (dateSelected) in
+                if let dateSelected = dateSelected {
+                   self?.workoutsForDate.append((self?.workoutSelected)!)
+                    DispatchQueue.main.async {
+                        self?.addEventToDictionary(forDay: dateSelected.date as! Date)
+                        self?.tableView.reloadData()
+                        self?.dayView.reload()
+                    }
+                }
+            })
+            
+            
+            
+            
         }
        
    
@@ -123,8 +142,6 @@ class CalendarViewController: UIViewController {
         if let dates = results.dates {
             for i in 0..<dates.count {
                 let date = dates[i].date
-                dateFormatter = DateFormatter()
-                dateFormatter.dateFormat = "dd-MM-yyyy";
                 let key = dateFormatter.string(from: date as! Date)
                 if eventsByDate[key] == nil {
                     eventsByDate[key] = [Date]()
@@ -141,12 +158,12 @@ extension CalendarViewController: JTCalendarDelegate {
     func calendar(_ calendar: JTCalendarManager!, prepareDayView dayView: UIView!) {
         if let dayVie = dayView as? JTCalendarDayView {
            dayVie.isHidden = false
+            
             if dayVie.isFromAnotherMonth {
                 dayVie.isHidden = true
             } else if calendarManager.dateHelper.date(Date(), isTheSameDayThan: dayVie.date) {
                 dayVie.circleView.isHidden = false
                 dayVie.circleView.backgroundColor = UIColor.red
-                dayVie.dotView.backgroundColor = UIColor.white
                 dayVie.textLabel.backgroundColor = UIColor.white
             } else if (dateSelected != nil) && (calendarManager.dateHelper.date(dateSelected, isTheSameDayThan: dayVie.date)) {
                 dayVie.circleView.isHidden = true
@@ -162,20 +179,29 @@ extension CalendarViewController: JTCalendarDelegate {
             } else {
                 dayVie.dotView.isHidden = true
             }
+            
         }
         
     }
     func haveEvent(forDay date:Date)-> Bool {
-        let key = dateFormatter.string(from: date)
+         let key = dateFormatter.string(from: date)
         guard let date = datesForWorkout[key], date.count > 0 else{
             return false
         }
         return true
     }
+    func addEventToDictionary(forDay date:Date) {
+        let key = dateFormatter.string(from: date)
+        if datesForWorkout[key] == nil {
+            datesForWorkout[key] = []
+        }
+        datesForWorkout[key]!.append(date)
+    }
    
     func calendar(_ calendar: JTCalendarManager!, didTouchDayView dayView: UIView!) {
         if let calendarDayView = dayView as? JTCalendarDayView {
             dateSelected = calendarDayView.date
+            
             if let dates = Dates.findDatesForCalendarDate(date: dateSelected!).dates {
                 workoutsForDate = dates.flatMap {$0.fromWorkout}
             }
@@ -223,5 +249,13 @@ extension CalendarViewController:UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+}
+extension CalendarViewController: DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
+    func title(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
+        return NSAttributedString(string: "No Workouts For This Day!", attributes: [NSForegroundColorAttributeName : UIColor.white])
+    }
+    func description(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
+        return NSAttributedString(string: "Click a Date and Hit the + To Add A Workout.", attributes: [NSForegroundColorAttributeName : UIColor.white])
+    }
 }
 

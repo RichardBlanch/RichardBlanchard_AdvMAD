@@ -57,6 +57,7 @@ class AddToView: UIView {
     }
     func fallOffScreen(completionHandler:@escaping (Void)->Void) {
         let gravity = UIGravityBehavior(items: [self])
+        gravity.magnitude = 4.0
         animator.removeBehavior(snapBehavior)
         animator.addBehavior(gravity)
         

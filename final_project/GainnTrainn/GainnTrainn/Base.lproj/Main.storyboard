@@ -432,35 +432,44 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="jmO-GE-YGO">
                                 <rect key="frame" x="0.0" y="64" width="375" height="736"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <view key="tableHeaderView" contentMode="scaleAspectFill" id="IXG-k4-4wb" customClass="WorkoutHeaderView" customModule="GainnTrainn" customModuleProvider="target">
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="hbW-op-o79" customClass="WorkoutHeaderView" customModule="GainnTrainn" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dwayne-The-Rock-Johnson" translatesAutoresizingMaskIntoConstraints="NO" id="aAG-oV-mc5">
+                                        <imageView userInteractionEnabled="NO" tag="200" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5jZ-UG-tAe">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgj-7F-Tek">
-                                            <rect key="frame" x="8" y="-40" width="359" height="170"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ate-bD-T1a">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yP-oH-miH">
+                                                    <rect key="frame" x="0.0" y="86.5" width="375" height="33.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="170" id="10V-Rg-s4N"/>
+                                                <constraint firstAttribute="bottom" secondItem="5yP-oH-miH" secondAttribute="bottom" constant="8" id="1kb-CN-N8i"/>
+                                                <constraint firstItem="5yP-oH-miH" firstAttribute="leading" secondItem="ate-bD-T1a" secondAttribute="leading" id="DND-6G-elS"/>
+                                                <constraint firstAttribute="trailing" secondItem="5yP-oH-miH" secondAttribute="trailing" id="IT5-CO-uVp"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        </view>
                                     </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
-                                        <constraint firstItem="aAG-oV-mc5" firstAttribute="leading" secondItem="IXG-k4-4wb" secondAttribute="leading" id="50f-8S-cor"/>
-                                        <constraint firstAttribute="trailing" secondItem="aAG-oV-mc5" secondAttribute="trailing" id="8vo-9R-U9p"/>
-                                        <constraint firstAttribute="bottom" secondItem="aAG-oV-mc5" secondAttribute="bottom" id="FaQ-du-xhb"/>
-                                        <constraint firstAttribute="trailing" secondItem="wgj-7F-Tek" secondAttribute="trailing" constant="8" id="fUd-vv-F7E"/>
-                                        <constraint firstItem="wgj-7F-Tek" firstAttribute="leading" secondItem="IXG-k4-4wb" secondAttribute="leading" constant="8" id="n6p-sU-HbU"/>
-                                        <constraint firstItem="aAG-oV-mc5" firstAttribute="top" secondItem="IXG-k4-4wb" secondAttribute="top" id="tAv-hM-ztg"/>
-                                        <constraint firstItem="wgj-7F-Tek" firstAttribute="top" secondItem="IXG-k4-4wb" secondAttribute="top" constant="-40" id="tM2-iD-a9t"/>
+                                        <constraint firstAttribute="trailing" secondItem="ate-bD-T1a" secondAttribute="trailing" id="7jJ-6Z-ynq"/>
+                                        <constraint firstAttribute="bottom" secondItem="ate-bD-T1a" secondAttribute="bottom" id="G9m-GU-n7I"/>
+                                        <constraint firstItem="5jZ-UG-tAe" firstAttribute="leading" secondItem="hbW-op-o79" secondAttribute="leading" id="K0G-CR-Smy"/>
+                                        <constraint firstAttribute="trailing" secondItem="5jZ-UG-tAe" secondAttribute="trailing" id="MMz-j6-Tg5"/>
+                                        <constraint firstItem="5jZ-UG-tAe" firstAttribute="top" secondItem="hbW-op-o79" secondAttribute="top" id="Zge-Ra-mi8"/>
+                                        <constraint firstItem="ate-bD-T1a" firstAttribute="top" secondItem="hbW-op-o79" secondAttribute="top" id="cX5-Ru-xSh"/>
+                                        <constraint firstItem="ate-bD-T1a" firstAttribute="leading" secondItem="hbW-op-o79" secondAttribute="leading" id="enU-Ox-Kdl"/>
+                                        <constraint firstAttribute="bottom" secondItem="5jZ-UG-tAe" secondAttribute="bottom" id="kne-MD-w3M"/>
                                     </constraints>
                                     <connections>
-                                        <outlet property="workoutLabel" destination="wgj-7F-Tek" id="b5C-Tl-SRa"/>
-                                        <outlet property="workoutMainimageView" destination="aAG-oV-mc5" id="aTH-Xt-T3D"/>
+                                        <outlet property="workoutCreatorLabel" destination="5yP-oH-miH" id="XaG-No-kdM"/>
                                     </connections>
                                 </view>
                                 <prototypes>
@@ -513,6 +522,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="800"/>
                     <connections>
+                        <outlet property="headerView" destination="hbW-op-o79" id="Wpa-FJ-YcZ"/>
                         <outlet property="tableView" destination="jmO-GE-YGO" id="SsB-yE-CBM"/>
                         <segue destination="mI7-tV-6s9" kind="show" identifier="Calendar" id="d1l-zB-CjF"/>
                     </connections>
@@ -607,6 +617,8 @@
                                 <connections>
                                     <outlet property="dataSource" destination="mI7-tV-6s9" id="NSY-JW-nhP"/>
                                     <outlet property="delegate" destination="mI7-tV-6s9" id="Sux-If-2ZJ"/>
+                                    <outlet property="emptyDataSetDelegate" destination="mI7-tV-6s9" id="b2x-KS-yrT"/>
+                                    <outlet property="emptyDataSetSource" destination="mI7-tV-6s9" id="x1b-tT-UAX"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -699,7 +711,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Dwayne-The-Rock-Johnson" width="375" height="675"/>
         <image name="man_running" width="1001" height="1600"/>
     </resources>
 </document>

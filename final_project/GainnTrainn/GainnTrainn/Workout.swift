@@ -17,7 +17,7 @@ open class Workout:NSManagedObject {
         return NSFetchRequest<Workout>(entityName: "Workout");
     }
     
-    @NSManaged public var id: Int32
+    @NSManaged public var workoutId: Int32
     @NSManaged public var creator: String?
     @NSManaged public var name: String?
     @NSManaged public var bodyType: String?
@@ -35,6 +35,9 @@ open class Workout:NSManagedObject {
             return nil
         }
     }
+    var aspectRatio:CGFloat {
+        return CGFloat(CGFloat(imageHeight) / CGFloat(imageWidth))
+    }
     
     private let kID = "id"
     private let kCreator = "creator"
@@ -51,8 +54,8 @@ open class Workout:NSManagedObject {
     init(json:[String:AnyObject], workoutService:WorkoutService) {
         let entityDescription = NSEntityDescription.entity(forEntityName: "Workout", in: workoutService.managedObjectContext)
         super.init(entity: entityDescription!, insertInto: workoutService.managedObjectContext)
-        self.id = json[kID] as! Int32
-        self.creator = json[kCreator] as? String ?? "THIS VALUE IS NIL"
+        self.workoutId = json[kID] as! Int32
+        self.creator = json[kCreator] as? String ?? "THIS VALUE IS NIL \(self.workoutId)"
         self.name = json[kName] as! String
         self.bodyType = json[kBodyType] as? String
         self.imageWidth = json[kImageWidth] as! Int16
@@ -81,9 +84,12 @@ open class Workout:NSManagedObject {
        
         return tupleArray
     }
-    class func fetchPredicate(fromFilterArray array:[String])->NSCompoundPredicate {
+    class func fetchPredicate(fromFilterArray array:[String])->NSCompoundPredicate? {
         var predicate = NSCompoundPredicate()
         var predicates = [NSPredicate]()
+        if array.count == 0 {
+            return nil
+        }
         for filterItem in array {
             var pred = NSPredicate(format: "%K LIKE %@", #keyPath(Workout.bodyType), "*\(filterItem)*")
             predicates.append(pred)

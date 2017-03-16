@@ -17,19 +17,19 @@
     <entity name="Workout" representedClassName=".Workout" syncable="YES">
         <attribute name="bodyType" attributeType="String" syncable="YES"/>
         <attribute name="creator" attributeType="String" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="imageHeight" attributeType="Integer 16" defaultValueString="200" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="imageURL" attributeType="String" syncable="YES"/>
         <attribute name="imageWidth" attributeType="Integer 16" defaultValueString="200" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="mainImage" optional="YES" attributeType="Transformable" valueTransformerName="ImageTransformer" customClassName="." syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="workoutId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="forDates" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Dates" inverseName="fromWorkout" inverseEntity="Dates" syncable="YES"/>
         <relationship name="masterSets" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="MasterSet" inverseName="workout" inverseEntity="MasterSet" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Dates" positionX="-36" positionY="81" width="128" height="75"/>
         <element name="Exercise" positionX="-18" positionY="90" width="128" height="105"/>
         <element name="MasterSet" positionX="-36" positionY="63" width="128" height="75"/>
         <element name="Workout" positionX="-54" positionY="-9" width="128" height="195"/>
-        <element name="Dates" positionX="-36" positionY="81" width="128" height="75"/>
     </elements>
 </model>
