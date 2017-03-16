@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class SongDetailViewController: UIViewController {
+class SongDetailViewController: UIViewController,AVAudioPlayerDelegate {
     var songClicked:Track?
     var avPlayer:AVPlayer!
     var avPlayerItem:AVPlayerItem?
@@ -51,6 +51,8 @@ class SongDetailViewController: UIViewController {
                 avPlayerItem = AVPlayerItem(url: url)
                 avPlayer = AVPlayer(playerItem: avPlayerItem)
                     NotificationCenter.default.addObserver(self, selector: #selector(self.endSong(playerItem:)), name:NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: avPlayerItem)
+                    
+                    NSNotification.Name.vol
             }
                 avPlayer.play()
                 selected = true
