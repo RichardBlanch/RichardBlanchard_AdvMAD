@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class WorkoutHeaderView: UIView {
     private enum kTag:Int {
         case label = 100

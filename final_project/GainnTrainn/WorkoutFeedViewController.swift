@@ -8,10 +8,13 @@
 
 import UIKit
 import WatchConnectivity
+import APIForGainTrain
 
 
 import UIKit
 import CoreData
+
+
 
 class WorkoutFeedViewController: UIViewController {
     
@@ -23,6 +26,7 @@ class WorkoutFeedViewController: UIViewController {
     static let kDetailSegueIdentifier = "workoutDetail"
     fileprivate static let goToFilterByViewController = "goToFilter"
     var workoutSelected:Workout!
+    let request = APIForGainTrain.Request()
     
     
      var predicate:NSPredicate?  {
@@ -59,11 +63,16 @@ class WorkoutFeedViewController: UIViewController {
         
         do {
             try fetchedResultsController.performFetch()
+            workoutTableView.reloadData()
+            if let workouts = fetchedResultsController.fetchedObjects {
+                if workouts.count == 0 {
+                    request.findWorkoutsThatUserDoesNotHave(fromWorkouts: [])
+                } else {
+                    request.findWorkoutsThatUserDoesNotHave(fromWorkouts: workouts.flatMap {$0.workoutId})
+                }
+            }
         } catch let error as NSError {
             print("Fetching error: \(error), \(error.userInfo)")
-        }
-        if fetchedResultsController.fetchedObjects?.count == 0 {
-            apiHelper.findWorkoutsThatUserDoesNotHave(fromWorkouts: [])
         }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -93,50 +102,6 @@ extension WorkoutFeedViewController {
     }
 }
 
-// MARK: - UITableViewDataSource
-extension WorkoutFeedViewController: UITableViewDataSource {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        guard let sections = fetchedResultsController.sections else {
-            return 0
-        }
-        
-        return sections.count
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        guard let sectionInfo = fetchedResultsController.sections?[section] else {
-            return 0
-        }
-        
-        return sectionInfo.numberOfObjects
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: WorkoutFeedViewController.feedCell, for: indexPath) as! FeedCell        
-        cell.workout = fetchedResultsController.object(at: indexPath)
-        
-        
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let sectionInfo = fetchedResultsController.sections?[section]
-        return sectionInfo?.name
-    }
-}
-
-// MARK: - UITableViewDelegate
-extension WorkoutFeedViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        workoutSelected = fetchedResultsController.object(at: indexPath)
-        performSegue(withIdentifier: WorkoutFeedViewController.kDetailSegueIdentifier, sender: self)
-        
-    }
-}
 
 // MARK: - NSFetchedResultsControllerDelegate
 extension WorkoutFeedViewController: NSFetchedResultsControllerDelegate {
