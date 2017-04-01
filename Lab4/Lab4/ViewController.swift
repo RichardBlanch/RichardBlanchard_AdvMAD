@@ -12,6 +12,7 @@ import CoreData
 class ViewController: UITableViewController {
      var fetchedResultsController : NSFetchedResultsController<Track>!
      let artistHelper = ArtistHelper()
+     var persistentCoordinator:NSPersistentContainer? = CoreDataStack.shared.persistentContainer
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -35,10 +36,11 @@ class ViewController: UITableViewController {
         
     }
     func fetchStuffFromCoreData() {
+        if let context = persistentCoordinator?.viewContext {
         let fetchRequest: NSFetchRequest<Track> = Track.fetchRequest()
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: #keyPath(Track.artist.name), ascending: true),NSSortDescriptor(key: #keyPath(Track.trackCensoredName), ascending: true)]
         fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest,
-                                                              managedObjectContext: ArtistService.sharedCellarService.managedObjectContext,
+                                                              managedObjectContext: context,
                                                               sectionNameKeyPath: #keyPath(Track.artist.name),
                                                               cacheName: nil)
         
@@ -49,13 +51,15 @@ class ViewController: UITableViewController {
         } catch let error as NSError {
             print("Fetching error: \(error), \(error.userInfo)")
         }
+        }
         
     }
     func itemsInCoreData()->Bool {
+        if let context = persistentCoordinator?.viewContext {
         let fetchRequest: NSFetchRequest<Artist> = Artist.fetchRequest()
         
         do {
-            let count = try ArtistService.sharedCellarService.managedObjectContext.count(for: fetchRequest)
+            let count = try context.count(for: fetchRequest)
             if count == 0 {
                 return false
             } else {
@@ -66,6 +70,8 @@ class ViewController: UITableViewController {
             return false
             print("Count not fetch \(error), \(error.userInfo)")
         }
+        }
+        return false
     }
     override func numberOfSections(in tableView: UITableView) -> Int {
         guard let sections = fetchedResultsController?.sections else {
@@ -145,7 +151,10 @@ extension ViewController: NSFetchedResultsControllerDelegate {
 extension ViewController:ItunesAPIDidFinishLoading {
     func dataIsReady() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in
-            try! ArtistService.sharedCellarService.managedObjectContext.save()
+            if let context = self?.persistentCoordinator?.viewContext {
+                try! context.save()
+            }
+            
         }
     }
 }

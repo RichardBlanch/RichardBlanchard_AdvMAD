@@ -83,9 +83,7 @@ extension SongDetailViewController: UISplitViewControllerDelegate {
             } else {
                 return false
             }
-        }
-    
-    
+    }
 }
 extension UIViewController {
     var contents: UIViewController {

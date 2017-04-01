@@ -10,8 +10,11 @@ import UIKit
 import JTCalendar
 import EventKit
 import DZNEmptyDataSet
+import CoreData
 
 class CalendarViewController: UIViewController {
+    
+    var container:NSPersistentContainer? = CoreDataStack.shared.persistentContainer
     var datesForWorkout:Dictionary<String,Array<Date>>!
     lazy var dateFormatter:DateFormatter = {
         let dateFormatter = DateFormatter()
@@ -76,9 +79,11 @@ class CalendarViewController: UIViewController {
 
     @IBAction func addEventsToCalendar(_ sender: UIBarButtonItem) {
         if let dateSelected = dateSelected {
-            Alerter.alertForCalendar(withTitle: "Add \(workoutSelected.name ?? "Workout")", withMessage: "Add Workout To Calendar?", fromViewController: self, forDateSelected: dateSelected, workoutToPotentiallyAdd: workoutSelected, completionHandler: {[weak self] (dateSelected) in
+            
+            
+            Alerter.alertForCalendar(withTitle: "Add \(workoutSelected.name ?? "Workout")", withMessage: "Add Workout To Calendar?", fromViewController: self, forDateSelected: dateSelected, workoutToPotentiallyAdd: workoutSelected, andContainer: container!, completionHandler: {[weak self] (dateSelected) in
                 if let dateSelected = dateSelected {
-                   self?.workoutsForDate.append((self?.workoutSelected)!)
+                    self?.workoutsForDate.append((self?.workoutSelected)!)
                     DispatchQueue.main.async {
                         self?.addEventToDictionary(forDay: dateSelected.date as! Date)
                         self?.tableView.reloadData()
@@ -86,10 +91,6 @@ class CalendarViewController: UIViewController {
                     }
                 }
             })
-            
-            
-            
-            
         }
        
    
@@ -133,8 +134,9 @@ class CalendarViewController: UIViewController {
     }
     
     func createRandomEvents() {
+        
         var eventsByDate = Dictionary<String,Array<Date>>()
-        let results = Dates.fetchDates(withCount: 30)
+        let results = Dates.fetchDates(withCount: 30, fromContainer: container!)
         guard results.error == nil else {
             return
         }
@@ -152,8 +154,12 @@ class CalendarViewController: UIViewController {
         }
         
         datesForWorkout = eventsByDate
+ 
     }
-}
+ 
+    }
+
+
 extension CalendarViewController: JTCalendarDelegate {
     func calendar(_ calendar: JTCalendarManager!, prepareDayView dayView: UIView!) {
         if let dayVie = dayView as? JTCalendarDayView {
@@ -201,13 +207,11 @@ extension CalendarViewController: JTCalendarDelegate {
     func calendar(_ calendar: JTCalendarManager!, didTouchDayView dayView: UIView!) {
         if let calendarDayView = dayView as? JTCalendarDayView {
             dateSelected = calendarDayView.date
-            
-            if let dates = Dates.findDatesForCalendarDate(date: dateSelected!).dates {
+            if let context = container?.viewContext, let dates = Dates.findDatesForCalendarDate(dateSelected!, fromContext: context).dates {
                 workoutsForDate = dates.flatMap {$0.fromWorkout}
             }
             
-            
-            
+        
             calendarDayView.circleView.transform = CGAffineTransform(a: CGAffineTransform.identity.a, b: CGAffineTransform.identity.b, c: CGAffineTransform.identity.c, d: CGAffineTransform.identity.d, tx: 0.1, ty: 0.1)
             UIView.transition(with: calendarDayView, duration: 0.3, options: UIViewAnimationOptions(rawValue: 0), animations: { 
                 calendarDayView.circleView.transform = CGAffineTransform.identity
@@ -249,6 +253,7 @@ extension CalendarViewController:UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    
 }
 extension CalendarViewController: DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
     func title(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
@@ -258,4 +263,5 @@ extension CalendarViewController: DZNEmptyDataSetSource, DZNEmptyDataSetDelegate
         return NSAttributedString(string: "Click a Date and Hit the + To Add A Workout.", attributes: [NSForegroundColorAttributeName : UIColor.white])
     }
 }
+
 

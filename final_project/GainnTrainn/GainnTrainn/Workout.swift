@@ -9,6 +9,7 @@
 import Foundation
 import CoreData
 import UIKit
+import APIForGainTrain
 
 
 open class Workout:NSManagedObject {
@@ -27,6 +28,8 @@ open class Workout:NSManagedObject {
     @NSManaged public var mainImage: UIImage?
     @NSManaged public var masterSets: NSSet?
     @NSManaged public var forDates: NSSet?
+    @NSManaged public var journal: Journal?
+    
     var masterSetsAsArray: [MasterSet]? {
         get {
             if let masterSet = masterSets {
@@ -39,36 +42,9 @@ open class Workout:NSManagedObject {
         return CGFloat(CGFloat(imageHeight) / CGFloat(imageWidth))
     }
     
-    private let kID = "id"
-    private let kCreator = "creator"
-    private let kName = "name"
-    private let kBodyType = "body_type"
-    private let kImageWidth = "img_width"
-    private let kImageHeight = "img_height"
-    private let kImageURL = "img_url"
     
     
-    override init(entity: NSEntityDescription, insertInto context: NSManagedObjectContext?) {
-        super.init(entity: entity, insertInto: context)
-    }
-    init(json:[String:AnyObject], workoutService:WorkoutService) {
-        let entityDescription = NSEntityDescription.entity(forEntityName: "Workout", in: workoutService.managedObjectContext)
-        super.init(entity: entityDescription!, insertInto: workoutService.managedObjectContext)
-        self.workoutId = json[kID] as! Int32
-        self.creator = json[kCreator] as? String ?? "THIS VALUE IS NIL \(self.workoutId)"
-        self.name = json[kName] as! String
-        self.bodyType = json[kBodyType] as? String
-        self.imageWidth = json[kImageWidth] as! Int16
-        self.imageHeight = json[kImageHeight] as! Int16
-        self.imageURL = json[kImageURL] as? String ?? "https://www.muscleandstrength.com/sites/default/files/field/feature-image/workout/hiit_treadmill_workouts_for_fat_loss.jpg"
-        let url = URL(string: self.imageURL!)!
-        do {
-            let data = try Data(contentsOf: url)
-            self.mainImage = UIImage(data: data)
-        } catch {
-            //Set UIImageHere
-        }
-    }
+    
     func getSetName(forCount count:Int)->String {
         switch count {
         case 1: return "Single-Set"
@@ -96,8 +72,52 @@ open class Workout:NSManagedObject {
         }
         return NSCompoundPredicate(orPredicateWithSubpredicates: predicates)
     }
-    
-
+    class func findOrCreateWorkout(matching workout: APIForGainTrain.Workout, in context: NSManagedObjectContext) throws -> Workout
+    {
+        let request:NSFetchRequest<Workout> = Workout.fetchRequest()
+        request.predicate = NSPredicate(format: "%K = %d",#keyPath(Workout.workoutId), workout.workoutId)
+        do {
+            let matches = try context.fetch(request)
+            if matches.count > 0 {
+                 assert(matches.count == 1, "Workout.findOrCreateWorkout -- database inconsistency")
+                return matches[0]
+            }
+            
+        }catch {
+            throw error
+        }
+        let coreDataWorkout = Workout(context: context)
+        coreDataWorkout.workoutId = workout.workoutId
+        coreDataWorkout.name = workout.name
+        coreDataWorkout.bodyType = workout.bodyType
+        coreDataWorkout.creator = workout.creator
+        coreDataWorkout.imageHeight = workout.imageHeight
+        coreDataWorkout.imageWidth = workout.imageWidth
+        coreDataWorkout.imageURL = workout.imageURL
+        if let data = try? Data(contentsOf: (URL(string: (workout.imageURL)!)!)) {
+            let mainImage = UIImage(data: data)
+            coreDataWorkout.mainImage = mainImage
+        }
+        
+        if let sets = workout.masterSets {
+            for set in sets {
+                let coreDataSet = MasterSet(context: context)
+                if let exercises = set.exercises {
+                    for exercise in exercises {
+                        let coreDataExercise = Exercise(context: context)
+                        coreDataExercise.name = exercise.name
+                        coreDataExercise.reps = exercise.reps
+                        coreDataExercise.sets = exercise.sets
+                        coreDataExercise.masterSet = coreDataSet
+                        coreDataSet.addToExercises(coreDataExercise)
+                    }
+                }
+                coreDataWorkout.addToMasterSets(coreDataSet)
+            }
+        }
+       
+        return coreDataWorkout
+    }
 }
 
 // MARK: Generated accessors for masterSets

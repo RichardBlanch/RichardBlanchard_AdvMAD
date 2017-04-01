@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		818468EA1E8EBC9900781BFA /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818468E91E8EBC9900781BFA /* CoreDataStack.swift */; };
 		81D6652C1E79F46200C154B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D6652B1E79F46200C154B5 /* AppDelegate.swift */; };
 		81D6652E1E79F46200C154B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D6652D1E79F46200C154B5 /* ViewController.swift */; };
 		81D665311E79F46200C154B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81D6652F1E79F46200C154B5 /* Main.storyboard */; };
@@ -15,8 +16,6 @@
 		81D6653E1E79F9B300C154B5 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D6653D1E79F9B300C154B5 /* Networker.swift */; };
 		81D665401E7A1E2600C154B5 /* Artists.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81D6653F1E7A1E2600C154B5 /* Artists.plist */; };
 		81D665451E7A230500C154B5 /* Music.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 81D665431E7A230500C154B5 /* Music.xcdatamodeld */; };
-		81D665471E7A252200C154B5 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D665461E7A252200C154B5 /* CoreDataStack.swift */; };
-		81D665491E7A255700C154B5 /* ArtistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D665481E7A255700C154B5 /* ArtistService.swift */; };
 		81D665561E7A2A4600C154B5 /* Track+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D665531E7A2A4600C154B5 /* Track+CoreDataClass.swift */; };
 		81D665571E7A2A4600C154B5 /* Track+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D665541E7A2A4600C154B5 /* Track+CoreDataProperties.swift */; };
 		81D6655A1E7A2ADB00C154B5 /* Artist+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D665581E7A2ADB00C154B5 /* Artist+CoreDataClass.swift */; };
@@ -28,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		818468E91E8EBC9900781BFA /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		81D665281E79F46200C154B5 /* Lab4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81D6652B1E79F46200C154B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81D6652D1E79F46200C154B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,8 +38,6 @@
 		81D6653D1E79F9B300C154B5 /* Networker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Networker.swift; path = ../Networker.swift; sourceTree = "<group>"; };
 		81D6653F1E7A1E2600C154B5 /* Artists.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Artists.plist; sourceTree = "<group>"; };
 		81D665441E7A230500C154B5 /* Music.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Music.xcdatamodel; sourceTree = "<group>"; };
-		81D665461E7A252200C154B5 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		81D665481E7A255700C154B5 /* ArtistService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistService.swift; sourceTree = "<group>"; };
 		81D665531E7A2A4600C154B5 /* Track+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Track+CoreDataClass.swift"; sourceTree = "<group>"; };
 		81D665541E7A2A4600C154B5 /* Track+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Track+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		81D665581E7A2ADB00C154B5 /* Artist+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Artist+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -66,6 +64,7 @@
 		81D6651F1E79F46200C154B5 = {
 			isa = PBXGroup;
 			children = (
+				818468E91E8EBC9900781BFA /* CoreDataStack.swift */,
 				81D6652A1E79F46200C154B5 /* Lab4 */,
 				81D665291E79F46200C154B5 /* Products */,
 				81D6655E1E7AAF1700C154B5 /* Frameworks */,
@@ -88,8 +87,6 @@
 				81D665531E7A2A4600C154B5 /* Track+CoreDataClass.swift */,
 				81D665541E7A2A4600C154B5 /* Track+CoreDataProperties.swift */,
 				81D6652B1E79F46200C154B5 /* AppDelegate.swift */,
-				81D665461E7A252200C154B5 /* CoreDataStack.swift */,
-				81D665481E7A255700C154B5 /* ArtistService.swift */,
 				81D6653F1E7A1E2600C154B5 /* Artists.plist */,
 				81D665431E7A230500C154B5 /* Music.xcdatamodeld */,
 				81D6653D1E79F9B300C154B5 /* Networker.swift */,
@@ -193,9 +190,8 @@
 				81D6655D1E7A3AC000C154B5 /* SongDetailViewController.swift in Sources */,
 				81D6655B1E7A2ADB00C154B5 /* Artist+CoreDataProperties.swift in Sources */,
 				81D6655A1E7A2ADB00C154B5 /* Artist+CoreDataClass.swift in Sources */,
+				818468EA1E8EBC9900781BFA /* CoreDataStack.swift in Sources */,
 				81D665571E7A2A4600C154B5 /* Track+CoreDataProperties.swift in Sources */,
-				81D665491E7A255700C154B5 /* ArtistService.swift in Sources */,
-				81D665471E7A252200C154B5 /* CoreDataStack.swift in Sources */,
 				81D6653E1E79F9B300C154B5 /* Networker.swift in Sources */,
 				81D665561E7A2A4600C154B5 /* Track+CoreDataClass.swift in Sources */,
 				81D665451E7A230500C154B5 /* Music.xcdatamodeld in Sources */,
@@ -362,6 +358,7 @@
 				81D6653C1E79F46200C154B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

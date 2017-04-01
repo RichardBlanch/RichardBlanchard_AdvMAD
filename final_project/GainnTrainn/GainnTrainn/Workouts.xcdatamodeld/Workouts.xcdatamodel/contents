@@ -10,6 +10,9 @@
         <attribute name="sets" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="masterSet" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MasterSet" inverseName="exercises" inverseEntity="MasterSet" syncable="YES"/>
     </entity>
+    <entity name="Journal" representedClassName=".Journal" syncable="YES">
+        <relationship name="workouts" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Workout" inverseName="journal" inverseEntity="Workout" syncable="YES"/>
+    </entity>
     <entity name="MasterSet" representedClassName=".MasterSet" syncable="YES">
         <relationship name="exercises" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Exercise" inverseName="masterSet" inverseEntity="Exercise" syncable="YES"/>
         <relationship name="workout" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Workout" inverseName="masterSets" inverseEntity="Workout" syncable="YES"/>
@@ -24,12 +27,14 @@
         <attribute name="name" attributeType="String" syncable="YES"/>
         <attribute name="workoutId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="forDates" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Dates" inverseName="fromWorkout" inverseEntity="Dates" syncable="YES"/>
+        <relationship name="journal" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Journal" inverseName="workouts" inverseEntity="Journal" syncable="YES"/>
         <relationship name="masterSets" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="MasterSet" inverseName="workout" inverseEntity="MasterSet" syncable="YES"/>
     </entity>
     <elements>
         <element name="Dates" positionX="-36" positionY="81" width="128" height="75"/>
         <element name="Exercise" positionX="-18" positionY="90" width="128" height="105"/>
+        <element name="Journal" positionX="-36" positionY="81" width="128" height="60"/>
         <element name="MasterSet" positionX="-36" positionY="63" width="128" height="75"/>
-        <element name="Workout" positionX="-54" positionY="-9" width="128" height="195"/>
+        <element name="Workout" positionX="-54" positionY="-9" width="128" height="210"/>
     </elements>
 </model>

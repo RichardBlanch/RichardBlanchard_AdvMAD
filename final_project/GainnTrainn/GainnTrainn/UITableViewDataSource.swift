@@ -9,8 +9,8 @@
 import Foundation
 
 
-extension WorkoutFeedViewController: UITableViewDelegate, UITableViewDataSource {
-func numberOfSections(in tableView: UITableView) -> Int {
+extension WorkoutFeedViewController {
+override func numberOfSections(in tableView: UITableView) -> Int {
     guard let sections = fetchedResultsController.sections else {
         return 0
     }
@@ -18,7 +18,7 @@ func numberOfSections(in tableView: UITableView) -> Int {
     return sections.count
 }
 
-func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     
     guard let sectionInfo = fetchedResultsController.sections?[section] else {
         return 0
@@ -27,7 +27,7 @@ func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> 
     return sectionInfo.numberOfObjects
 }
 
-func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
     let cell = tableView.dequeueReusableCell(withIdentifier: WorkoutFeedViewController.feedCell, for: indexPath) as! FeedCell
     cell.workout = fetchedResultsController.object(at: indexPath)
@@ -36,13 +36,18 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
     return cell
 }
 
-func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
     let sectionInfo = fetchedResultsController.sections?[section]
     return sectionInfo?.name
 }
-func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     workoutSelected = fetchedResultsController.object(at: indexPath)
     performSegue(withIdentifier: WorkoutFeedViewController.kDetailSegueIdentifier, sender: self)
     
     }
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let workout = fetchedResultsController.object(at: indexPath)
+        return (workout.aspectRatio * tableView.frame.width) + 113
+    }
+   
 }

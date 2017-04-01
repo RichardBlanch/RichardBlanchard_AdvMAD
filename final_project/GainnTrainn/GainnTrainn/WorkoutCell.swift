@@ -24,8 +24,11 @@ class FeedCell: UITableViewCell {
             retailerNameLabel.text = workout.name
             offerTitleLabel.text = workout.creator
             descriptionText.text = workout.bodyType
-            if let url = URL(string:workout.imageURL ?? "") {
-                mainImage.kf.setImage(with: url)
+            if let url = URL(string:workout.imageURL!) {
+                DispatchQueue.main.async { [weak self] in
+                    self?.mainImage.kf.setImage(with: url)
+                }
+                
             }
         }
     }

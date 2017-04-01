@@ -43,13 +43,18 @@
 		81BF6EA21E5657A900DEC8D9 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BF6E9C1E5657A900DEC8D9 /* Workout.swift */; };
 		81BF6EA41E5657A900DEC8D9 /* MasterSet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BF6E9E1E5657A900DEC8D9 /* MasterSet+CoreDataProperties.swift */; };
 		81BF6EA61E5657A900DEC8D9 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BF6EA01E5657A900DEC8D9 /* Exercise.swift */; };
-		81BF6EA81E565D0C00DEC8D9 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BF6EA71E565D0C00DEC8D9 /* CoreDataStack.swift */; };
-		81BF6EAA1E565D3B00DEC8D9 /* WorkoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BF6EA91E565D3B00DEC8D9 /* WorkoutService.swift */; };
-		81BF6EAD1E565E0A00DEC8D9 /* GainTrainAPIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BF6EAC1E565E0A00DEC8D9 /* GainTrainAPIHelper.swift */; };
 		81BF6EB11E565F8300DEC8D9 /* WorkoutFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BF6EB01E565F8300DEC8D9 /* WorkoutFeedViewController.swift */; };
+		81C348031E83288C00A80ED0 /* Journal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C348011E83288C00A80ED0 /* Journal+CoreDataClass.swift */; };
+		81C348041E83288C00A80ED0 /* Journal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C348021E83288C00A80ED0 /* Journal+CoreDataProperties.swift */; };
+		81D0D9CB1E82C87D00A474DC /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D0D9CA1E82C87D00A474DC /* JournalViewController.swift */; };
+		81D0D9CF1E82CA7400A474DC /* UIViewController+GainTrainExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D0D9CE1E82CA7400A474DC /* UIViewController+GainTrainExtension.swift */; };
+		81D0D9D11E82ED8500A474DC /* JournalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D0D9D01E82ED8500A474DC /* JournalTableViewCell.swift */; };
 		81DABCB81E8073720068A094 /* UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DABCB71E8073720068A094 /* UITableViewDataSource.swift */; };
 		81DABD8E1E8086940068A094 /* APIForGainTrain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81DABD8D1E80867A0068A094 /* APIForGainTrain.framework */; };
 		81DABD8F1E8086940068A094 /* APIForGainTrain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 81DABD8D1E80867A0068A094 /* APIForGainTrain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		81DABD931E8098070068A094 /* FetchedResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DABD921E8098070068A094 /* FetchedResultsTableViewController.swift */; };
+		81DABDB61E809FFC0068A094 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DABDB51E809FFC0068A094 /* CoreDataStack.swift */; };
+		81DABDB81E80B8720068A094 /* DatesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DABDB71E80B8720068A094 /* DatesTableViewController.swift */; };
 		81E7134D1E5663850070DFE7 /* WorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E7134C1E5663850070DFE7 /* WorkoutCell.swift */; };
 		81E7134F1E5663A10070DFE7 /* UniversalUIElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E7134E1E5663A10070DFE7 /* UniversalUIElements.swift */; };
 		81E713511E5671250070DFE7 /* WorkoutFetchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E713501E5671250070DFE7 /* WorkoutFetchDelegate.swift */; };
@@ -172,12 +177,17 @@
 		81BF6E9C1E5657A900DEC8D9 /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		81BF6E9E1E5657A900DEC8D9 /* MasterSet+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MasterSet+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		81BF6EA01E5657A900DEC8D9 /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
-		81BF6EA71E565D0C00DEC8D9 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		81BF6EA91E565D3B00DEC8D9 /* WorkoutService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutService.swift; sourceTree = "<group>"; };
-		81BF6EAC1E565E0A00DEC8D9 /* GainTrainAPIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GainTrainAPIHelper.swift; sourceTree = "<group>"; };
 		81BF6EB01E565F8300DEC8D9 /* WorkoutFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkoutFeedViewController.swift; path = ../WorkoutFeedViewController.swift; sourceTree = "<group>"; };
+		81C348011E83288C00A80ED0 /* Journal+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Journal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		81C348021E83288C00A80ED0 /* Journal+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Journal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		81D0D9CA1E82C87D00A474DC /* JournalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
+		81D0D9CE1E82CA7400A474DC /* UIViewController+GainTrainExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+GainTrainExtension.swift"; sourceTree = "<group>"; };
+		81D0D9D01E82ED8500A474DC /* JournalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalTableViewCell.swift; sourceTree = "<group>"; };
 		81DABCB71E8073720068A094 /* UITableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewDataSource.swift; sourceTree = "<group>"; };
 		81DABD881E80867A0068A094 /* APIForGainTrain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = APIForGainTrain.xcodeproj; path = APIForGainTrain/APIForGainTrain.xcodeproj; sourceTree = "<group>"; };
+		81DABD921E8098070068A094 /* FetchedResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResultsTableViewController.swift; sourceTree = "<group>"; };
+		81DABDB51E809FFC0068A094 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = ../CoreDataStack.swift; sourceTree = "<group>"; };
+		81DABDB71E80B8720068A094 /* DatesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatesTableViewController.swift; sourceTree = "<group>"; };
 		81E7134C1E5663850070DFE7 /* WorkoutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutCell.swift; sourceTree = "<group>"; };
 		81E7134E1E5663A10070DFE7 /* UniversalUIElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversalUIElements.swift; sourceTree = "<group>"; };
 		81E713501E5671250070DFE7 /* WorkoutFetchDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutFetchDelegate.swift; sourceTree = "<group>"; };
@@ -239,6 +249,7 @@
 				813DBE821E75FB6700A592E2 /* AddToView.xib */,
 				813DBE861E75FC8F00A592E2 /* AddToView.swift */,
 				8107E3861E5CEC2F004AF74F /* WorkoutFilterByCollectionViewCell.swift */,
+				81D0D9D01E82ED8500A474DC /* JournalTableViewCell.swift */,
 				8107C1BF1E6672DA002EA6C4 /* RemoveAll.swift */,
 				8146AB041E71D79F0037CB7C /* VerticalCalendarView.xib */,
 				814CB8881E788F3200C96E19 /* WorkoutHeaderView.xib */,
@@ -342,13 +353,14 @@
 		81BF6E981E56554A00DEC8D9 /* CoreDataStuff */ = {
 			isa = PBXGroup;
 			children = (
-				81BF6EA71E565D0C00DEC8D9 /* CoreDataStack.swift */,
+				81C348011E83288C00A80ED0 /* Journal+CoreDataClass.swift */,
+				81C348021E83288C00A80ED0 /* Journal+CoreDataProperties.swift */,
+				81DABDB51E809FFC0068A094 /* CoreDataStack.swift */,
 				813DBE921E7760CE00A592E2 /* Dates.swift */,
 				81BF6EA01E5657A900DEC8D9 /* Exercise.swift */,
 				81BF6E9E1E5657A900DEC8D9 /* MasterSet+CoreDataProperties.swift */,
 				81BF6E991E5655F000DEC8D9 /* ImageTransformer.swift */,
 				81BF6E9C1E5657A900DEC8D9 /* Workout.swift */,
-				81BF6EA91E565D3B00DEC8D9 /* WorkoutService.swift */,
 				81BF6E951E56554000DEC8D9 /* Workouts.xcdatamodeld */,
 				81DABCB71E8073720068A094 /* UITableViewDataSource.swift */,
 			);
@@ -358,11 +370,19 @@
 		81BF6EAB1E565DE400DEC8D9 /* HelperClasses */ = {
 			isa = PBXGroup;
 			children = (
-				81BF6EAC1E565E0A00DEC8D9 /* GainTrainAPIHelper.swift */,
+				81D0D9CD1E82CA6400A474DC /* Extensions */,
 				81835CC61E5AA1FF00928E49 /* HealthKitHelper.swift */,
 				813DBE881E760FFD00A592E2 /* Alerter.swift */,
 			);
 			name = HelperClasses;
+			sourceTree = "<group>";
+		};
+		81D0D9CD1E82CA6400A474DC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				81D0D9CE1E82CA7400A474DC /* UIViewController+GainTrainExtension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		81DABD891E80867A0068A094 /* Products */ = {
@@ -385,7 +405,10 @@
 			isa = PBXGroup;
 			children = (
 				8146AB021E71D4C30037CB7C /* CalendarViewController.swift */,
+				81DABDB71E80B8720068A094 /* DatesTableViewController.swift */,
+				81DABD921E8098070068A094 /* FetchedResultsTableViewController.swift */,
 				81835D651E5CD74400928E49 /* FilterViewController.swift */,
+				81D0D9CA1E82C87D00A474DC /* JournalViewController.swift */,
 				81BF6EB01E565F8300DEC8D9 /* WorkoutFeedViewController.swift */,
 				81E713541E5686CE0070DFE7 /* WorkoutDetailViewController.swift */,
 			);
@@ -718,29 +741,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				8146AB031E71D4C30037CB7C /* CalendarViewController.swift in Sources */,
+				81DABD931E8098070068A094 /* FetchedResultsTableViewController.swift in Sources */,
 				8146AB091E733D760037CB7C /* EventKitHelper.swift in Sources */,
 				81BF6EA41E5657A900DEC8D9 /* MasterSet+CoreDataProperties.swift in Sources */,
 				81E713551E5686CE0070DFE7 /* WorkoutDetailViewController.swift in Sources */,
 				81E7134D1E5663850070DFE7 /* WorkoutCell.swift in Sources */,
 				81835D661E5CD74400928E49 /* FilterViewController.swift in Sources */,
+				81C348031E83288C00A80ED0 /* Journal+CoreDataClass.swift in Sources */,
 				81E713511E5671250070DFE7 /* WorkoutFetchDelegate.swift in Sources */,
 				8107E3871E5CEC2F004AF74F /* WorkoutFilterByCollectionViewCell.swift in Sources */,
 				81BF6EA21E5657A900DEC8D9 /* Workout.swift in Sources */,
 				81E7134F1E5663A10070DFE7 /* UniversalUIElements.swift in Sources */,
-				81BF6EAA1E565D3B00DEC8D9 /* WorkoutService.swift in Sources */,
 				81835D601E5B991A00928E49 /* WorkoutHeaderView.swift in Sources */,
-				81BF6EAD1E565E0A00DEC8D9 /* GainTrainAPIHelper.swift in Sources */,
-				81BF6EA81E565D0C00DEC8D9 /* CoreDataStack.swift in Sources */,
 				81835CC71E5AA1FF00928E49 /* HealthKitHelper.swift in Sources */,
 				813DBE931E7760CE00A592E2 /* Dates.swift in Sources */,
+				81DABDB81E80B8720068A094 /* DatesTableViewController.swift in Sources */,
 				8107C1C01E6672DA002EA6C4 /* RemoveAll.swift in Sources */,
+				81DABDB61E809FFC0068A094 /* CoreDataStack.swift in Sources */,
 				813DBE891E760FFD00A592E2 /* Alerter.swift in Sources */,
 				81BF6E971E56554000DEC8D9 /* Workouts.xcdatamodeld in Sources */,
 				81BF6EA61E5657A900DEC8D9 /* Exercise.swift in Sources */,
 				81BF6EB11E565F8300DEC8D9 /* WorkoutFeedViewController.swift in Sources */,
+				81C348041E83288C00A80ED0 /* Journal+CoreDataProperties.swift in Sources */,
 				81BF6E841E5651F100DEC8D9 /* AppDelegate.swift in Sources */,
 				81BF6E9A1E5655F000DEC8D9 /* ImageTransformer.swift in Sources */,
+				81D0D9D11E82ED8500A474DC /* JournalTableViewCell.swift in Sources */,
 				81DABCB81E8073720068A094 /* UITableViewDataSource.swift in Sources */,
+				81D0D9CB1E82C87D00A474DC /* JournalViewController.swift in Sources */,
+				81D0D9CF1E82CA7400A474DC /* UIViewController+GainTrainExtension.swift in Sources */,
 				813DBE871E75FC8F00A592E2 /* AddToView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

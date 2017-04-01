@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class WorkoutDetailViewController: UIViewController {
     
@@ -60,7 +61,7 @@ class WorkoutDetailViewController: UIViewController {
     }
     func setUpUI(isFirstTime:Bool) {
         tableHeaderHeight = workoutSelected.aspectRatio * UIScreen.main.bounds.size.width
-        headerView.imageForWorkout = workoutSelected.mainImage
+        headerView.imageForHeaderView = workoutSelected.mainImage
         headerView.workoutCreatorText = workoutSelected.creator
         navigationItem.title = workoutSelected.name
         if isFirstTime {
@@ -69,7 +70,6 @@ class WorkoutDetailViewController: UIViewController {
         }
         tableView.contentInset = UIEdgeInsets(top: tableHeaderHeight, left: 0, bottom: 0, right: 0)
         tableView.contentOffset = CGPoint(x: 0, y: -tableHeaderHeight)
-        headerView.imageForWorkout = workoutSelected.mainImage
         updateHeaderView()
     }
     func updateHeaderView() {

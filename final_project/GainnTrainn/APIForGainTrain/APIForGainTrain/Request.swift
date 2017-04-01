@@ -12,8 +12,8 @@ public class Request: NSObject {
     
     
     
-    public func findWorkoutsThatUserDoesNotHave(fromWorkouts workouts:[Int32]) {
-        let encapsulatedFetchRequestData = self.getWhereClause(fromWorkouts: workouts)
+    public func findWorkoutsThatUserDoesNotHave(fromWorkouts workoutIDs:[Int32],completionHandler:@escaping(_ workouts:[Workout]?)->Void) {
+        let encapsulatedFetchRequestData = self.getWhereClause(fromWorkouts: workoutIDs)
         var endPoint = ""
         
         if encapsulatedFetchRequestData.fetchAllWorkoutsInstead == true {
@@ -36,28 +36,27 @@ public class Request: NSObject {
                     if let workoutArray = workoutData[self.kWorkoutPlan] as? [[String:AnyObject]] {
                         var workoutsManagedArray = [Workout]()
                         for workoutJSON in workoutArray {
-                            var workout = Workout(json: workoutJSON)
+                            let workout = Workout(json: workoutJSON)
                             var masterSetArray = [MasterSet]()
                             if let masterSetsDictionary = workoutJSON[self.kMastersets] as? [[String:AnyObject]] {
                                 for set in masterSetsDictionary {
                                     let masterSet = MasterSet()
                                     if let exercises = set[self.kExercises] as? [[String:AnyObject]] {
+                                        masterSet.exercises = []
                                         for exerciseDictionary in exercises {
                                             let exercise = Exercise(json: exerciseDictionary)
                                             masterSet.exercises?.append(exercise)
-                                            
                                         }
+                                        masterSetArray.append(masterSet)
                                     }
-                                    workout.masterSets?.append(masterSet)
+                                    workout.masterSets = masterSetArray
                                 }
                                 
                             }
                             workoutsManagedArray.append(workout)
                         }
-                        DispatchQueue.main.async { [weak self] in
-                            for workout in workoutsManagedArray {
-                                print("The workout is \(workout.name)")
-                            }
+                        DispatchQueue.main.async {
+                            completionHandler(workoutsManagedArray)
                         }
                     }
                 }

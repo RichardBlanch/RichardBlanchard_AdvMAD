@@ -27,12 +27,28 @@ public class Artist: NSManagedObject {
     override  init(entity: NSEntityDescription, insertInto context: NSManagedObjectContext?) {
         super.init(entity: entity, insertInto: context)
     }
-    init(name:String) {
-        let entityDescription = NSEntityDescription.entity(forEntityName: "Artist", in: ArtistService.sharedCellarService.managedObjectContext)
-        super.init(entity:entityDescription! , insertInto: ArtistService.sharedCellarService.managedObjectContext)
-        self.name = name.replacingOccurrences(of: "+", with: " ").capitalized
-        
+    
+    
+    //TODO - Change to create song
+    class func findOrCreateArtist(matching artistName: String, in context: NSManagedObjectContext) throws -> Artist
+    {
+        let request:NSFetchRequest<Artist> = Artist.fetchRequest()
+        request.predicate = NSPredicate(format: "%K = %d",#keyPath(Artist.name), artistName)
+        do {
+            let matches = try context.fetch(request)
+            if matches.count > 0 {
+                assert(matches.count == 1, "-- database inconsistency")
+                return matches[0]
+            }
+            
+        }catch {
+            throw error
+        }
+        let artist = Artist(context: context)
+        artist.name = artistName.replacingOccurrences(of: "+", with: " ").capitalized
+        return artist
     }
+
     
 
 

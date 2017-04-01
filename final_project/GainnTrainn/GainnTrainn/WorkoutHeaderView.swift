@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 
 class WorkoutHeaderView: UIView {
@@ -20,12 +21,12 @@ class WorkoutHeaderView: UIView {
           workoutCreatorLabel.text = workoutCreatorText
         }
     }
+    @IBOutlet weak var headerImageView: UIImageView!
     
-    var imageForWorkout:UIImage! {
+    var imageForHeaderView:UIImage! {
         didSet {
             if let imageView = self.viewWithTag(kTag.image.rawValue) as? UIImageView {
-                imageView.contentMode = .scaleAspectFill
-                imageView.image = imageForWorkout
+                imageView.image = imageForHeaderView
             }
         }
     }

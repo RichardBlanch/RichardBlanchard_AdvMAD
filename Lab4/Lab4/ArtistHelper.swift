@@ -28,14 +28,15 @@ class ArtistHelper:NSObject {
         artists[key] = []
         artists[key] = artistsStrings
     }
+    CoreDataStack.shared.persistentContainer.viewContext.perform { 
+        
+        
     //https://www.raywenderlich.com/148515/grand-central-dispatch-tutorial-swift-3-part-2 code inspired from.
     let downloadGroup = DispatchGroup()
-    DispatchQueue.global(qos: .userInitiated)
     let artistsArray = Array(artists.keys)
     DispatchQueue.concurrentPerform(iterations: (artistsArray.count)) {
         i in
         let index = Int(i)
-        let key = artistsArray[index]
         let artistsStrings = Array(artists.values)[index]
         
         for artistString in artistsStrings {
@@ -53,10 +54,13 @@ class ArtistHelper:NSObject {
                     if let outerDictionary = try? JSONSerialization.jsonObject(with: realDate, options: .init(rawValue: 0)) as? [String:Any] {
                         
                         if let innerArrays = outerDictionary?["results"] as? [[String:Any]] {
-                            let artist = Artist(name: artistString)
+                            let artist = try? Artist.findOrCreateArtist(matching: artistString, in: CoreDataStack.shared.persistentContainer.viewContext)
+                            try! CoreDataStack.shared.persistentContainer.viewContext.save()
                             for track in innerArrays {
-                                let track = Track(withJSON: track, andArtist: artist)
-                                artist.addToTracks(track)
+                                let trackCensored = track["trackCensoredName"] as! String
+                               let track = try? Track.findOrCreateSong(matching: trackCensored, withJSON: track, andArtist: artist!, in: CoreDataStack.shared.persistentContainer.viewContext)
+                                artist?.addToTracks(track!)
+                                try! CoreDataStack.shared.persistentContainer.viewContext.save()
                             }
                         }
                         
@@ -73,5 +77,6 @@ class ArtistHelper:NSObject {
     downloadGroup.notify(queue: DispatchQueue.main) { [weak self] in
         self?.delegate?.dataIsReady()
     }
+        }
 }
 }
