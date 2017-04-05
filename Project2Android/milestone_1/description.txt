@@ -1,0 +1,5 @@
+Description:
+	My project will be very similar to Yelp, but obviously no where near as impressive. What I want to do is grab the user’s location and then display a number of restaurants that are relatively close to the user. From there. if a user wants to click on a restaurant, they can see some of the basic information about the restaurant such as their hours, menu, address etc. There will also be a link where the user can click and see the actual website in their browser.
+
+Data:
+	I plan on using the Foursquare API and/or scraping restaurants to grab the relevant information that will be needed. I have not used the Foursquare API before so I will need to delve into the documentation soon.

@@ -1,0 +1,6 @@
+Inspiration:
+	The inspiration for my app is that one of the first apps I made in iOS was an app like this. I feel like creating an app of this nature helped me learn SOOOO much of the iOS frameworks because there are a lot of different moving parts (location,APIs, table views) etc. I know very little about the Android Framework and hope that this project will work wonders for me like it did in iOS. I think it is also a pretty cool app that will make me proud when I am done building it.
+
+
+Intended Audience:
+	This audience is intended for everyone because everyone loves restaurants and would love to see those restaurants that are nearby. I also hope to onboard all the Yelp Haters. 
