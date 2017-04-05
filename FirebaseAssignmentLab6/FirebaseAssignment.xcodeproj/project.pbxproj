@@ -12,12 +12,8 @@
 		818468E31E8C3FF400781BFA /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818468E21E8C3FF400781BFA /* Player.swift */; };
 		818468E51E8C449800781BFA /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818468E41E8C449800781BFA /* Team.swift */; };
 		818468E71E8DCE0900781BFA /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818468E61E8DCE0900781BFA /* PlayerDetailViewController.swift */; };
-		81B14D4D1E84403A004D03BF /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B14D4C1E84403A004D03BF /* AddViewController.swift */; };
-		81B14D4F1E84441E004D03BF /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B14D4E1E84441E004D03BF /* Recipe.swift */; };
-		81B14D551E844F8B004D03BF /* e.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B14D541E844F8B004D03BF /* e.m */; };
-		81B14D571E844FD7004D03BF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B14D561E844FD7004D03BF /* LoginViewController.swift */; };
 		81ED09DC1E80644B0079CC6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ED09DB1E80644B0079CC6C /* AppDelegate.swift */; };
-		81ED09DE1E80644B0079CC6C /* RecipesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ED09DD1E80644B0079CC6C /* RecipesTableViewController.swift */; };
+		81ED09DE1E80644B0079CC6C /* PlayersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ED09DD1E80644B0079CC6C /* PlayersTableViewController.swift */; };
 		81ED09E11E80644B0079CC6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81ED09DF1E80644B0079CC6C /* Main.storyboard */; };
 		81ED09E31E80644B0079CC6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81ED09E21E80644B0079CC6C /* Assets.xcassets */; };
 		81ED09E61E80644B0079CC6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81ED09E41E80644B0079CC6C /* LaunchScreen.storyboard */; };
@@ -30,14 +26,10 @@
 		818468E21E8C3FF400781BFA /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		818468E41E8C449800781BFA /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		818468E61E8DCE0900781BFA /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewController.swift; sourceTree = "<group>"; };
-		81B14D4C1E84403A004D03BF /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
-		81B14D4E1E84441E004D03BF /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		81B14D531E844F8B004D03BF /* FirebaseAssignment-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FirebaseAssignment-Bridging-Header.h"; sourceTree = "<group>"; };
-		81B14D541E844F8B004D03BF /* e.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = e.m; sourceTree = "<group>"; };
-		81B14D561E844FD7004D03BF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		81ED09D81E80644B0079CC6C /* FirebaseAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81ED09DB1E80644B0079CC6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		81ED09DD1E80644B0079CC6C /* RecipesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewController.swift; sourceTree = "<group>"; };
+		81ED09DD1E80644B0079CC6C /* PlayersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersTableViewController.swift; sourceTree = "<group>"; };
 		81ED09E01E80644B0079CC6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81ED09E21E80644B0079CC6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81ED09E51E80644B0079CC6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -88,10 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				81ED09DB1E80644B0079CC6C /* AppDelegate.swift */,
-				81B14D561E844FD7004D03BF /* LoginViewController.swift */,
-				81B14D4C1E84403A004D03BF /* AddViewController.swift */,
-				81ED09DD1E80644B0079CC6C /* RecipesTableViewController.swift */,
-				81B14D4E1E84441E004D03BF /* Recipe.swift */,
+				81ED09DD1E80644B0079CC6C /* PlayersTableViewController.swift */,
 				818468E21E8C3FF400781BFA /* Player.swift */,
 				818468E61E8DCE0900781BFA /* PlayerDetailViewController.swift */,
 				818468E41E8C449800781BFA /* Team.swift */,
@@ -99,7 +88,6 @@
 				81ED09E21E80644B0079CC6C /* Assets.xcassets */,
 				81ED09E41E80644B0079CC6C /* LaunchScreen.storyboard */,
 				814FEFE31E80656A005310A9 /* GoogleService-Info.plist */,
-				81B14D541E844F8B004D03BF /* e.m */,
 				81ED09E71E80644B0079CC6C /* Info.plist */,
 				81B14D531E844F8B004D03BF /* FirebaseAssignment-Bridging-Header.h */,
 			);
@@ -240,15 +228,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81B14D571E844FD7004D03BF /* LoginViewController.swift in Sources */,
-				81ED09DE1E80644B0079CC6C /* RecipesTableViewController.swift in Sources */,
-				81B14D551E844F8B004D03BF /* e.m in Sources */,
+				81ED09DE1E80644B0079CC6C /* PlayersTableViewController.swift in Sources */,
 				81ED09DC1E80644B0079CC6C /* AppDelegate.swift in Sources */,
 				818468E51E8C449800781BFA /* Team.swift in Sources */,
 				818468E71E8DCE0900781BFA /* PlayerDetailViewController.swift in Sources */,
 				818468E31E8C3FF400781BFA /* Player.swift in Sources */,
-				81B14D4D1E84403A004D03BF /* AddViewController.swift in Sources */,
-				81B14D4F1E84441E004D03BF /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

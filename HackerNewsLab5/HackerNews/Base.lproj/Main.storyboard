@@ -219,9 +219,8 @@
                                     <outlet property="delegate" destination="zrs-fb-ppW" id="WZE-0S-Lk7"/>
                                 </connections>
                             </webView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="JzZ-Ro-Qat">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="JzZ-Ro-Qat">
                                 <rect key="frame" x="177" y="323" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -229,6 +228,8 @@
                             <constraint firstItem="J1r-c2-Boe" firstAttribute="top" secondItem="kdp-wk-Weg" secondAttribute="bottom" id="8EH-8i-fOx"/>
                             <constraint firstItem="kdp-wk-Weg" firstAttribute="top" secondItem="gtD-uT-EuT" secondAttribute="bottom" constant="-64" id="JmT-7J-ca4"/>
                             <constraint firstItem="kdp-wk-Weg" firstAttribute="leading" secondItem="n56-5v-tBh" secondAttribute="leading" id="fQw-NN-ZbI"/>
+                            <constraint firstItem="JzZ-Ro-Qat" firstAttribute="centerY" secondItem="n56-5v-tBh" secondAttribute="centerY" id="gZo-Df-nSh"/>
+                            <constraint firstItem="JzZ-Ro-Qat" firstAttribute="centerX" secondItem="n56-5v-tBh" secondAttribute="centerX" id="o51-U7-N3O"/>
                             <constraint firstAttribute="trailing" secondItem="kdp-wk-Weg" secondAttribute="trailing" id="w57-qG-5mx"/>
                         </constraints>
                     </view>

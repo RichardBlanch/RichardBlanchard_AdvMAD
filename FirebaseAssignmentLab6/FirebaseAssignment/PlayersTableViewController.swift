@@ -14,27 +14,20 @@ class RecipesTableViewController: UITableViewController {
             readDataFromFirebase()
         }
     }
+    
     var teams = [Team]()
+    var spinner:UIActivityIndicatorView!
     
     
     fileprivate static let cellIdentifier =  "RecipeCell"
     private let playerDetailSeguw = "playerDetail"
-    /*
-     @IBAction func goBackFromCancelOrDone(_ storyboardSegue:UIStoryboardSegue) {
-     if storyboardSegue.identifier == donesegueIdentifier {
-     let destVC = storyboardSegue.source as! AddViewController
-     let newRecipe = Recipe(name: destVC.nameToAdd ?? "I have no name", url: (destVC.urlToAdd ?? "I have no url"))
-     recipes.append(newRecipe)
-     let newRecipeDict = ["name" : destVC.nameTextfield.text ?? "Hello", "url" : destVC.urlTextfield.text ?? "World"]
-     let recipeRef = reference.child(destVC.nameTextfield.text!).setValue(newRecipeDict)
-     
-     
-     }
-     }
-     */
+   
+    
+    //DATA COMES FROM FIREBASE WHICH WAS OBTAINED FROM get_mlb_players.py
     override func viewDidLoad() {
         super.viewDidLoad()
         reference = FIRDatabase.database().reference()
+        createSpinner()
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == playerDetailSeguw {
@@ -83,11 +76,11 @@ class RecipesTableViewController: UITableViewController {
         })
     }
     func readDataFromFirebase() {
-        getTeams { (teamNames) in
+        getTeams { [weak self](teamNames) in
                 var i = 0
                 for team in teamNames {
                     let teamObj = Team(withTeamName: team)
-                    self.reference.child("teams").child(team).child("players").observe(.value, with: { (playerSnapshot) in
+                    self?.reference.child("teams").child(team).child("players").observe(.value, with: { (playerSnapshot) in
                         let players = playerSnapshot.children.allObjects as! [FIRDataSnapshot]
                         for playa in players {
                             if let player = Player(snapshot: playa) {
@@ -96,17 +89,25 @@ class RecipesTableViewController: UITableViewController {
                             }
                         }
                         
-                         self.teams.append(teamObj)
+                         self?.teams.append(teamObj)
                          i+=1
                         if i == teamNames.count {
                             DispatchQueue.main.async {
-                                self.tableView.reloadData()
+                                self?.spinner.stopAnimating()
+                                self?.tableView.reloadData()
                             }
                         }
                     })
                    
             }
         }
+    }
+    func createSpinner() {
+        spinner = UIActivityIndicatorView(frame: CGRect(x: tableView.bounds.midX - 15, y: tableView.bounds.midY - 15, width: 30, height: 30))
+        spinner?.hidesWhenStopped = true
+        spinner?.startAnimating()
+        spinner?.color = .black
+        tableView.addSubview(spinner)
     }
 }
 
