@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lab_7_Rich_Blanchard</string>
+    <string name="Coca_Cola">Coca Cola</string>
+    <string-array name="food_or_drink">
+        <item>Food</item>
+        <item>Drink</item>
+    </string-array>
+    <string name="title_activity_type_food_drink">TypeFoodDrinkActivity</string>
+</resources>

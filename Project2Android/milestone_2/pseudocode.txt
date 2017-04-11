@@ -1,0 +1,9 @@
+PseudoCode:
+
+- Grab user’s location.
+
+- Pull from 4Square or other location based API which will tell me the restaurants nearby the user.
+
+- Once a user has clicked on the restaurant, pull relevant information from the API.
+
+- If a user has clicked the link for the website, send them to the restaurant’s website.
