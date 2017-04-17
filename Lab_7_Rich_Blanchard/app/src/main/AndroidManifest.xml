@@ -16,8 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TypeOfFoodOrDrinkActivity"></activity>
-        <activity android:name=".BrandFoodDriknActivity"></activity>
+        <activity
+            android:name=".TypeOfFoodOrDrinkActivity"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+            android:label="Food Or Drink?"
+            android:parentActivityName=".FoodDrinkMainActivity" >
+        </activity>
+        <activity
+            android:name=".BrandFoodDriknActivity"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+            android:label="Food Or Drink?"
+            android:parentActivityName=".FoodDrinkMainActivity" >
+        </activity>
     </application>
 
 </manifest>

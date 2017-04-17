@@ -12,6 +12,8 @@ public class TypeOfFoodOrDrinks {
         this.name = newname;
     }
 
+
+
     //food
     public static final TypeOfFoodOrDrinks[] foods = {
             new TypeOfFoodOrDrinks("Breakfast"),

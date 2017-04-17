@@ -1,5 +1,6 @@
 package com.example.hsport.lab_7_rich_blanchard;
 
+import android.app.ActionBar;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +9,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.util.Log;
+import android.view.Menu;
 
 /**
  * Created by gig_r on 4/10/17.
@@ -17,9 +19,17 @@ public class BrandFoodDriknActivity extends ListActivity {
     private String value_clicked;
     private int food_or_water_clicked;
 
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        ActionBar actionBar = getActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         ListView brand_list_view = getListView();
 
