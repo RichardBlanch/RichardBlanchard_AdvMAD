@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RichardBlanchard_Project2</string>
+    <string name="title_activity_restaurant_detail">RestaurantDetailActivity</string>
+    <string name="restDescription">RestaurantImage</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>
