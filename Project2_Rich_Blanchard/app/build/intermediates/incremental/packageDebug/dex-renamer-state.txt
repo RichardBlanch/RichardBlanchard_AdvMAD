@@ -1,0 +1,7 @@
+#Mon Apr 17 19:46:47 MDT 2017
+base.0=/Users/gig_r/Desktop/iOSProjects/AdvancedMobileDevelopment/Labs/Project2_Rich_Blanchard/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_1c39ff2848e063c02b762bed7c0af31e9362db6e
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/gig_r/Desktop/iOSProjects/AdvancedMobileDevelopment/Labs/Project2_Rich_Blanchard/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_3c0bd54b6c260b2e2f72c1c028ac55f9e30ae972/classes.dex
+base.1=/Users/gig_r/Desktop/iOSProjects/AdvancedMobileDevelopment/Labs/Project2_Rich_Blanchard/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_3c0bd54b6c260b2e2f72c1c028ac55f9e30ae972
+file.0=/Users/gig_r/Desktop/iOSProjects/AdvancedMobileDevelopment/Labs/Project2_Rich_Blanchard/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_1c39ff2848e063c02b762bed7c0af31e9362db6e/classes.dex

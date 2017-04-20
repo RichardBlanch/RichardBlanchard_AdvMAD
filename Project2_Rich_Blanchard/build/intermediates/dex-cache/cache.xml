@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/gig_r/Desktop/iOSProjects/AdvancedMobileDevelopment/Labs/Project2_Rich_Blanchard/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/Users/gig_r/Desktop/iOSProjects/AdvancedMobileDevelopment/Labs/Project2_Rich_Blanchard/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_3c0bd54b6c260b2e2f72c1c028ac55f9e30ae972/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/gig_r/Desktop/iOSProjects/AdvancedMobileDevelopment/Labs/Project2_Rich_Blanchard/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="39633398ab88e3d74c5919ab9e5ced27b0bea127">
+        <dex dex="/Users/gig_r/Desktop/iOSProjects/AdvancedMobileDevelopment/Labs/Project2_Rich_Blanchard/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_1c39ff2848e063c02b762bed7c0af31e9362db6e/classes.dex" />
+    </item>
+
+</items>

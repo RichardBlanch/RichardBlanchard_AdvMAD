@@ -1,0 +1,7 @@
+#Mon Apr 17 19:25:09 MDT 2017
+base.0=/Users/gig_r/Desktop/iOSProjects/AdvancedMobileDevelopment/Labs/Project2_Rich_Blanchard/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_68e51ee6e20b8be2cb8de3daf1e6d5fb62249068
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/gig_r/Desktop/iOSProjects/AdvancedMobileDevelopment/Labs/Project2_Rich_Blanchard/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0c89a6bd5bdfb6bfc139e40b1607ba99cbbe67ba/classes.dex
+base.1=/Users/gig_r/Desktop/iOSProjects/AdvancedMobileDevelopment/Labs/Project2_Rich_Blanchard/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0c89a6bd5bdfb6bfc139e40b1607ba99cbbe67ba
+file.0=/Users/gig_r/Desktop/iOSProjects/AdvancedMobileDevelopment/Labs/Project2_Rich_Blanchard/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_68e51ee6e20b8be2cb8de3daf1e6d5fb62249068/classes.dex
