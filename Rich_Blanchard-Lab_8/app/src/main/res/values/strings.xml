@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Rich_Blanchard-Lab_8</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_title"> Add Team </string>
+    <string name="add_team_hint">Team name</string>
+</resources>
