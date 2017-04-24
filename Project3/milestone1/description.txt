@@ -1,0 +1,3 @@
+The functionality I want to add to my app is the ability to add a certain workout to your ‘Workout Journal.’ The user can currently see a number of workouts that have been curated. From there, they should be able to add these workouts to their journal and then log at the amount of weight they did for each set. This journal should be persistent.
+
+I will not need any new content or data because the user should be able to pull up a workout they like and then then log their own individual data. I will have to alter my Core Data database which may be the sophisticated part of this milestone. 
