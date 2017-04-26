@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.content.Context;
 import android.widget.AdapterView;
@@ -21,6 +22,8 @@ public class LeagueFragment extends Fragment implements AdapterView.OnItemClickL
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+
         if (listener != null) {
             listener.itemClicked(id);
         }
@@ -29,6 +32,7 @@ public class LeagueFragment extends Fragment implements AdapterView.OnItemClickL
     public LeagueFragment() {
         // Required empty public constructor
     }
+
 
 
     @Override

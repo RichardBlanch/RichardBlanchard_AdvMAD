@@ -5,6 +5,13 @@
     android:orientation="vertical"
     tools:context="com.example.hsport.rich_blanchard_lab_8.TeamsFragment">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="32sp"
+        android:layout_height="wrap_content"
+        android:text="@string/teams"
+        />
+
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

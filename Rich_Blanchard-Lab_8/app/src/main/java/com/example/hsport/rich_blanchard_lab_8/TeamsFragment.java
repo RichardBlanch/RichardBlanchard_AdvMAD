@@ -3,8 +3,11 @@ package com.example.hsport.rich_blanchard_lab_8;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -17,6 +20,7 @@ import java.util.ArrayList;
 import android.widget.Button;
 import android.view.ContextMenu;
 import android.widget.AdapterView;
+import java.util.Scanner;
 
 
 /**
@@ -30,7 +34,11 @@ public class TeamsFragment extends Fragment implements View.OnClickListener {
 
     public void setLeague(long id){
         this.leagueIDSelected = id;
+
+
     }
+
+
 
 
     public TeamsFragment() {
@@ -60,12 +68,36 @@ public class TeamsFragment extends Fragment implements View.OnClickListener {
             leagueIDSelected = savedInstanceState.getLong("leagueIDSelected");
         }
 
+
         if (Baseball.leagues[0].getTeams().size() == 0) {
             Baseball.leagues[0].loadTeams(getActivity(),0);
+
         } if (Baseball.leagues[1].getTeams().size() == 0) {
             Baseball.leagues[1].loadTeams(getActivity(),1);
         }
-        return inflater.inflate(R.layout.fragment_teams, container, false);
+        View view = inflater.inflate(R.layout.fragment_teams, container, false);
+        ListView lv = (ListView) view.findViewById(R.id.teamListView);
+
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1,
+                                    int position, long arg3) {
+                openMLBWebsite(position);
+            }
+        });
+        return view;
+    }
+    protected void openMLBWebsite(int fromID) {
+        String team = Baseball.leagues[(int) leagueIDSelected].getTeams().get(fromID);
+        String secondWord = getSecondWord(team).toLowerCase();
+        String url = "https://www.mlb.com" + "/" + secondWord;
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+    }
+    public String getSecondWord(String fromMLBTeam) {
+        return fromMLBTeam.contains(" ") ? fromMLBTeam.substring(fromMLBTeam.indexOf(' ')).trim() : "";
     }
     @Override
     public void onStart() {
@@ -74,6 +106,11 @@ public class TeamsFragment extends Fragment implements View.OnClickListener {
         ListView teamsListView = (ListView) view.findViewById(R.id.teamListView);
         ArrayList<String> teams = new ArrayList<String>();
         teams = Baseball.leagues[(int) leagueIDSelected].getTeams();
+        if (teams.size() == 0) {
+            Baseball.leagues[(int) leagueIDSelected].loadTeams(getActivity(),1);
+        }
+        teams = Baseball.leagues[(int) leagueIDSelected].getTeams();
+
 
         adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, teams);
         teamsListView.setAdapter(adapter);
@@ -84,7 +121,7 @@ public class TeamsFragment extends Fragment implements View.OnClickListener {
         registerForContextMenu(teamsListView);
 
     }
-    public void addHero() {
+    public void addTeam() {
         final Dialog dialog = new Dialog(getActivity());
         dialog.setContentView(R.layout.dialog);
         dialog.setTitle("Add A new team.");
@@ -126,7 +163,7 @@ public class TeamsFragment extends Fragment implements View.OnClickListener {
                     item.getMenuInfo();
             Baseball.leagues[(int) leagueIDSelected].getTeams().remove(info.position);
             Baseball.leagues[(int)leagueIDSelected].storeTeams(getActivity(), leagueIDSelected);
-            TeamsFragment.this.adapter.notifyDataSetChanged();;
+            TeamsFragment.this.adapter.notifyDataSetChanged();
         }
         return true;
     }

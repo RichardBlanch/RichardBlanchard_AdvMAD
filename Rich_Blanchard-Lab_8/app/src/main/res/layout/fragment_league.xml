@@ -11,7 +11,14 @@
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
         android:contentDescription="league"
-        android:src="@drawable/american_league"
+        android:src="@drawable/mlb_logo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="32sp"
+        android:layout_height="wrap_content"
+        android:text="@string/leagues"
         />
 
     <ListView

@@ -2,10 +2,10 @@ package com.example.hsport.rich_blanchard_lab_8;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.app.FragmentTransaction;
 import android.view.View;
 import android.content.Intent;
+import android.widget.ImageView;
 
 public class MainActivity extends Activity implements LeagueFragment.ListenerForLeagueSelected,
         TeamsFragment.ButtonClickListener {
@@ -19,7 +19,7 @@ public class MainActivity extends Activity implements LeagueFragment.ListenerFor
     @Override
     public void addHeroClicked(View view) {
         TeamsFragment fragment = (TeamsFragment) getFragmentManager().findFragmentById(R.id.fragment_container);
-        fragment.addHero();
+        fragment.addTeam();
     }
 
     @Override
@@ -44,11 +44,6 @@ public class MainActivity extends Activity implements LeagueFragment.ListenerFor
             intent.putExtra("id", (int) id);
             startActivity(intent);
         }
-
-
-
-
-
     }
 
     @Override

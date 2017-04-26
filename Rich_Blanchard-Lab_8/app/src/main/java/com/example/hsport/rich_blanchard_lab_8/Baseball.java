@@ -11,6 +11,8 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import android.content.SharedPreferences;
 import android.content.Context;
+import android.util.Log;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -30,18 +32,17 @@ public class Baseball {
             new Baseball("National League", new ArrayList<String>())
     };
 
+
     public void loadTeams(Context context, int leagueID) {
         SharedPreferences sharedPreferences = context.getSharedPreferences("Teams", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         Set<String> set = sharedPreferences.getStringSet(leagues[leagueID].getLeague(),null);
-        if (set != null) {
+
+        if (set.size() != 1 && set != null) {
+            Log.e("size","size" + set.size());
+            Log.e("set","set" + set);
+
             Baseball.leagues[leagueID].teams.addAll(set);
-        }
-
-
-
-        if (set != null) {
-            Baseball.leagues[(int) leagueID].teams.addAll(set);
         }
         else {
             switch ((int) leagueID) {
@@ -66,6 +67,7 @@ public class Baseball {
         editor.putStringSet(leagues[(int)leagueId].getLeague(),set);
         editor.commit();
     }
+
 
     public String getLeague() {
         return this.league;
