@@ -7,6 +7,7 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -33,13 +34,13 @@ public class Atmosphere {
             new Atmosphere("Inside", new ArrayList<String>()),
     };
 
-    public void storeHeroes(Context context, long mountainID){
+    public void storeHeroes(Context context, int mountainID,List activities_to_save){
         SharedPreferences sharedPrefs = context.getSharedPreferences("Mountains", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPrefs.edit();
         Set<String> set = new HashSet<String>();
         //add heroes to the set
-        set.addAll(mountains[(int) mountainID].getActivities());
-        editor.putStringSet(mountains[(int) mountainID].getDoors(), set);
+        set.addAll(activities_to_save);
+        editor.putStringSet(mountains[mountainID].getDoors(), set);
         editor.commit();
     }
 
