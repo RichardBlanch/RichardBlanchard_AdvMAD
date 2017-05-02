@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Blanchard_Final</string>
     <string name="title_activity_image">ImageActivity</string>
+    <string name="title_activity_image_two">ImageActivityTwo</string>
 </resources>

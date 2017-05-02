@@ -28,6 +28,7 @@ public class AtmosphereActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_atmosphere);
+        setTitle("Activities");
         Intent intent = getIntent();
         atmosphereSelected = intent.getIntExtra("atmosphereID",0);
         loadDataIfNil();
@@ -66,8 +67,14 @@ public class AtmosphereActivity extends Activity {
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(AtmosphereActivity.this, ImageActivity.class);
-                startActivity(intent);
+                if (atmosphereSelected == 0) {
+                    Intent intent = new Intent(AtmosphereActivity.this, ImageActivityTwo.class);
+                    startActivity(intent);
+                } else {
+                    Intent intent = new Intent(AtmosphereActivity.this, ImageActivity.class);
+                    startActivity(intent);
+                }
+
             }
         };
         listView.setOnItemClickListener(itemClickListener);

@@ -3,6 +3,7 @@
         <item
             android:id="@+id/create_order"
             android:title="Sign Up"
+            android:icon="@drawable/event"
             android:showAsAction="ifRoom" />
 
 </menu>
