@@ -61,6 +61,16 @@ public class AtmosphereActivity extends Activity {
         ListView listView = (ListView) findViewById(R.id.mainListView);
         listView.setAdapter(arrayAdapter);
         registerForContextMenu(listView);
+
+
+        AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(AtmosphereActivity.this, ImageActivity.class);
+                startActivity(intent);
+            }
+        };
+        listView.setOnItemClickListener(itemClickListener);
     }
     void showDialog() {
         final Dialog dialog = new Dialog(AtmosphereActivity.this);
