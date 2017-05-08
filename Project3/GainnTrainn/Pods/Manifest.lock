@@ -1,0 +1,18 @@
+PODS:
+  - DZNEmptyDataSet (1.8.1)
+  - JTCalendar (2.1.9)
+  - Kingfisher (3.5.1)
+
+DEPENDENCIES:
+  - DZNEmptyDataSet
+  - JTCalendar (~> 2.0)
+  - Kingfisher (~> 3.5)
+
+SPEC CHECKSUMS:
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  JTCalendar: beb2f4c1b639bf6880f680b4858227acf83a049c
+  Kingfisher: 12eeffeef42ea45b68c5e5acfe8ba9005b713ab4
+
+PODFILE CHECKSUM: a047624bc72ad3f6f9c089a95e70ac60ce8694b5
+
+COCOAPODS: 1.2.0

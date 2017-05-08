@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81835C4E1E5A9F8400928E49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81835C4D1E5A9F8400928E49 /* AppDelegate.swift */; };
+		81835C501E5A9F8400928E49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81835C4F1E5A9F8400928E49 /* ViewController.swift */; };
+		81835C531E5A9F8400928E49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81835C511E5A9F8400928E49 /* Main.storyboard */; };
+		81835C551E5A9F8400928E49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81835C541E5A9F8400928E49 /* Assets.xcassets */; };
+		81835C581E5A9F8400928E49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81835C561E5A9F8400928E49 /* LaunchScreen.storyboard */; };
+		81835C5D1E5A9F8500928E49 /* GainTrainWatchApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 81835C5C1E5A9F8500928E49 /* GainTrainWatchApp WatchKit App.app */; };
+		81835C631E5A9F8500928E49 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81835C611E5A9F8500928E49 /* Interface.storyboard */; };
+		81835C651E5A9F8500928E49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81835C641E5A9F8500928E49 /* Assets.xcassets */; };
+		81835C6C1E5A9F8500928E49 /* GainTrainWatchApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 81835C6B1E5A9F8500928E49 /* GainTrainWatchApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		81835C731E5A9F8500928E49 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81835C721E5A9F8500928E49 /* InterfaceController.swift */; };
+		81835C751E5A9F8500928E49 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81835C741E5A9F8500928E49 /* ExtensionDelegate.swift */; };
+		81835C771E5A9F8500928E49 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81835C761E5A9F8500928E49 /* NotificationController.swift */; };
+		81835C791E5A9F8500928E49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81835C781E5A9F8500928E49 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		81835C5E1E5A9F8500928E49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81835C421E5A9F8400928E49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81835C5B1E5A9F8500928E49;
+			remoteInfo = "GainTrainWatchApp WatchKit App";
+		};
+		81835C6D1E5A9F8500928E49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81835C421E5A9F8400928E49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81835C6A1E5A9F8500928E49;
+			remoteInfo = "GainTrainWatchApp WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		81835C801E5A9F8500928E49 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				81835C6C1E5A9F8500928E49 /* GainTrainWatchApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81835C841E5A9F8500928E49 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				81835C5D1E5A9F8500928E49 /* GainTrainWatchApp WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		81835C4A1E5A9F8400928E49 /* GainTrainWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GainTrainWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81835C4D1E5A9F8400928E49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		81835C4F1E5A9F8400928E49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		81835C521E5A9F8400928E49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		81835C541E5A9F8400928E49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81835C571E5A9F8400928E49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81835C591E5A9F8400928E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81835C5C1E5A9F8500928E49 /* GainTrainWatchApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GainTrainWatchApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81835C621E5A9F8500928E49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		81835C641E5A9F8500928E49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81835C661E5A9F8500928E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81835C6B1E5A9F8500928E49 /* GainTrainWatchApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GainTrainWatchApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81835C711E5A9F8500928E49 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		81835C721E5A9F8500928E49 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		81835C741E5A9F8500928E49 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		81835C761E5A9F8500928E49 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		81835C781E5A9F8500928E49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81835C7A1E5A9F8500928E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81835C471E5A9F8400928E49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81835C681E5A9F8500928E49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81835C411E5A9F8400928E49 = {
+			isa = PBXGroup;
+			children = (
+				81835C4C1E5A9F8400928E49 /* GainTrainWatchApp */,
+				81835C601E5A9F8500928E49 /* GainTrainWatchApp WatchKit App */,
+				81835C6F1E5A9F8500928E49 /* GainTrainWatchApp WatchKit Extension */,
+				81835C4B1E5A9F8400928E49 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		81835C4B1E5A9F8400928E49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81835C4A1E5A9F8400928E49 /* GainTrainWatchApp.app */,
+				81835C5C1E5A9F8500928E49 /* GainTrainWatchApp WatchKit App.app */,
+				81835C6B1E5A9F8500928E49 /* GainTrainWatchApp WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81835C4C1E5A9F8400928E49 /* GainTrainWatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				81835C4D1E5A9F8400928E49 /* AppDelegate.swift */,
+				81835C4F1E5A9F8400928E49 /* ViewController.swift */,
+				81835C511E5A9F8400928E49 /* Main.storyboard */,
+				81835C541E5A9F8400928E49 /* Assets.xcassets */,
+				81835C561E5A9F8400928E49 /* LaunchScreen.storyboard */,
+				81835C591E5A9F8400928E49 /* Info.plist */,
+			);
+			path = GainTrainWatchApp;
+			sourceTree = "<group>";
+		};
+		81835C601E5A9F8500928E49 /* GainTrainWatchApp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				81835C611E5A9F8500928E49 /* Interface.storyboard */,
+				81835C641E5A9F8500928E49 /* Assets.xcassets */,
+				81835C661E5A9F8500928E49 /* Info.plist */,
+			);
+			path = "GainTrainWatchApp WatchKit App";
+			sourceTree = "<group>";
+		};
+		81835C6F1E5A9F8500928E49 /* GainTrainWatchApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				81835C721E5A9F8500928E49 /* InterfaceController.swift */,
+				81835C741E5A9F8500928E49 /* ExtensionDelegate.swift */,
+				81835C761E5A9F8500928E49 /* NotificationController.swift */,
+				81835C781E5A9F8500928E49 /* Assets.xcassets */,
+				81835C7A1E5A9F8500928E49 /* Info.plist */,
+				81835C701E5A9F8500928E49 /* Supporting Files */,
+			);
+			path = "GainTrainWatchApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		81835C701E5A9F8500928E49 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				81835C711E5A9F8500928E49 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81835C491E5A9F8400928E49 /* GainTrainWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81835C851E5A9F8500928E49 /* Build configuration list for PBXNativeTarget "GainTrainWatchApp" */;
+			buildPhases = (
+				81835C461E5A9F8400928E49 /* Sources */,
+				81835C471E5A9F8400928E49 /* Frameworks */,
+				81835C481E5A9F8400928E49 /* Resources */,
+				81835C841E5A9F8500928E49 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81835C5F1E5A9F8500928E49 /* PBXTargetDependency */,
+			);
+			name = GainTrainWatchApp;
+			productName = GainTrainWatchApp;
+			productReference = 81835C4A1E5A9F8400928E49 /* GainTrainWatchApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		81835C5B1E5A9F8500928E49 /* GainTrainWatchApp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81835C811E5A9F8500928E49 /* Build configuration list for PBXNativeTarget "GainTrainWatchApp WatchKit App" */;
+			buildPhases = (
+				81835C5A1E5A9F8500928E49 /* Resources */,
+				81835C801E5A9F8500928E49 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81835C6E1E5A9F8500928E49 /* PBXTargetDependency */,
+			);
+			name = "GainTrainWatchApp WatchKit App";
+			productName = "GainTrainWatchApp WatchKit App";
+			productReference = 81835C5C1E5A9F8500928E49 /* GainTrainWatchApp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		81835C6A1E5A9F8500928E49 /* GainTrainWatchApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81835C7D1E5A9F8500928E49 /* Build configuration list for PBXNativeTarget "GainTrainWatchApp WatchKit Extension" */;
+			buildPhases = (
+				81835C671E5A9F8500928E49 /* Sources */,
+				81835C681E5A9F8500928E49 /* Frameworks */,
+				81835C691E5A9F8500928E49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GainTrainWatchApp WatchKit Extension";
+			productName = "GainTrainWatchApp WatchKit Extension";
+			productReference = 81835C6B1E5A9F8500928E49 /* GainTrainWatchApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81835C421E5A9F8400928E49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Rich;
+				TargetAttributes = {
+					81835C491E5A9F8400928E49 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = RT665D95TU;
+						ProvisioningStyle = Automatic;
+					};
+					81835C5B1E5A9F8500928E49 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = RT665D95TU;
+						ProvisioningStyle = Automatic;
+					};
+					81835C6A1E5A9F8500928E49 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = RT665D95TU;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 81835C451E5A9F8400928E49 /* Build configuration list for PBXProject "GainTrainWatchApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 81835C411E5A9F8400928E49;
+			productRefGroup = 81835C4B1E5A9F8400928E49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81835C491E5A9F8400928E49 /* GainTrainWatchApp */,
+				81835C5B1E5A9F8500928E49 /* GainTrainWatchApp WatchKit App */,
+				81835C6A1E5A9F8500928E49 /* GainTrainWatchApp WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81835C481E5A9F8400928E49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81835C581E5A9F8400928E49 /* LaunchScreen.storyboard in Resources */,
+				81835C551E5A9F8400928E49 /* Assets.xcassets in Resources */,
+				81835C531E5A9F8400928E49 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81835C5A1E5A9F8500928E49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81835C651E5A9F8500928E49 /* Assets.xcassets in Resources */,
+				81835C631E5A9F8500928E49 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81835C691E5A9F8500928E49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81835C791E5A9F8500928E49 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81835C461E5A9F8400928E49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81835C501E5A9F8400928E49 /* ViewController.swift in Sources */,
+				81835C4E1E5A9F8400928E49 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81835C671E5A9F8500928E49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81835C771E5A9F8500928E49 /* NotificationController.swift in Sources */,
+				81835C751E5A9F8500928E49 /* ExtensionDelegate.swift in Sources */,
+				81835C731E5A9F8500928E49 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		81835C5F1E5A9F8500928E49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81835C5B1E5A9F8500928E49 /* GainTrainWatchApp WatchKit App */;
+			targetProxy = 81835C5E1E5A9F8500928E49 /* PBXContainerItemProxy */;
+		};
+		81835C6E1E5A9F8500928E49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81835C6A1E5A9F8500928E49 /* GainTrainWatchApp WatchKit Extension */;
+			targetProxy = 81835C6D1E5A9F8500928E49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		81835C511E5A9F8400928E49 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81835C521E5A9F8400928E49 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		81835C561E5A9F8400928E49 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81835C571E5A9F8400928E49 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		81835C611E5A9F8500928E49 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81835C621E5A9F8500928E49 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81835C7B1E5A9F8500928E49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		81835C7C1E5A9F8500928E49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81835C7E1E5A9F8500928E49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = RT665D95TU;
+				INFOPLIST_FILE = "GainTrainWatchApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com-blanchard-gs.GainTrainWatchApp.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		81835C7F1E5A9F8500928E49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = RT665D95TU;
+				INFOPLIST_FILE = "GainTrainWatchApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com-blanchard-gs.GainTrainWatchApp.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		81835C821E5A9F8500928E49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RT665D95TU;
+				IBSC_MODULE = GainTrainWatchApp_WatchKit_Extension;
+				INFOPLIST_FILE = "GainTrainWatchApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com-blanchard-gs.GainTrainWatchApp.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		81835C831E5A9F8500928E49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RT665D95TU;
+				IBSC_MODULE = GainTrainWatchApp_WatchKit_Extension;
+				INFOPLIST_FILE = "GainTrainWatchApp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com-blanchard-gs.GainTrainWatchApp.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		81835C861E5A9F8500928E49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RT665D95TU;
+				INFOPLIST_FILE = GainTrainWatchApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com-blanchard-gs.GainTrainWatchApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		81835C871E5A9F8500928E49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RT665D95TU;
+				INFOPLIST_FILE = GainTrainWatchApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com-blanchard-gs.GainTrainWatchApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81835C451E5A9F8400928E49 /* Build configuration list for PBXProject "GainTrainWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81835C7B1E5A9F8500928E49 /* Debug */,
+				81835C7C1E5A9F8500928E49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81835C7D1E5A9F8500928E49 /* Build configuration list for PBXNativeTarget "GainTrainWatchApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81835C7E1E5A9F8500928E49 /* Debug */,
+				81835C7F1E5A9F8500928E49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		81835C811E5A9F8500928E49 /* Build configuration list for PBXNativeTarget "GainTrainWatchApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81835C821E5A9F8500928E49 /* Debug */,
+				81835C831E5A9F8500928E49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		81835C851E5A9F8500928E49 /* Build configuration list for PBXNativeTarget "GainTrainWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81835C861E5A9F8500928E49 /* Debug */,
+				81835C871E5A9F8500928E49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81835C421E5A9F8400928E49 /* Project object */;
+}

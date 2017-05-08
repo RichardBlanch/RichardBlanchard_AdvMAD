@@ -1,0 +1,10 @@
+framework module APIGT {
+  umbrella header "APIGT.h"
+
+  export *
+  module * { export * }
+}
+
+module APIGT.Swift {
+    header "APIGT-Swift.h"
+}

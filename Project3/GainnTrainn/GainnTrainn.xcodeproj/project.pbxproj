@@ -1,0 +1,1115 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14896FC1FC87346F83BFB5D8 /* Pods_GainnTrainn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58D02B6DF5BB51415F11F5D /* Pods_GainnTrainn.framework */; };
+		2E461432E15D94D04531822B /* Pods_GainnTrainnWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F00A0BDBD5808FB2EE6B726F /* Pods_GainnTrainnWatch.framework */; };
+		8107C1C01E6672DA002EA6C4 /* RemoveAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8107C1BF1E6672DA002EA6C4 /* RemoveAll.swift */; };
+		8107E3871E5CEC2F004AF74F /* WorkoutFilterByCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8107E3861E5CEC2F004AF74F /* WorkoutFilterByCollectionViewCell.swift */; };
+		813DBE831E75FB6700A592E2 /* AddToView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 813DBE821E75FB6700A592E2 /* AddToView.xib */; };
+		813DBE871E75FC8F00A592E2 /* AddToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DBE861E75FC8F00A592E2 /* AddToView.swift */; };
+		813DBE891E760FFD00A592E2 /* Alerter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DBE881E760FFD00A592E2 /* Alerter.swift */; };
+		813DBE931E7760CE00A592E2 /* Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DBE921E7760CE00A592E2 /* Dates.swift */; };
+		8146AB031E71D4C30037CB7C /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8146AB021E71D4C30037CB7C /* CalendarViewController.swift */; };
+		8146AB051E71D79F0037CB7C /* VerticalCalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8146AB041E71D79F0037CB7C /* VerticalCalendarView.xib */; };
+		8146AB091E733D760037CB7C /* EventKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8146AB081E733D760037CB7C /* EventKitHelper.swift */; };
+		814CB8891E788F3200C96E19 /* WorkoutHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 814CB8881E788F3200C96E19 /* WorkoutHeaderView.xib */; };
+		81835C9A1E5AA02500928E49 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81835C981E5AA02500928E49 /* Interface.storyboard */; };
+		81835C9C1E5AA02500928E49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81835C9B1E5AA02500928E49 /* Assets.xcassets */; };
+		81835CA31E5AA02600928E49 /* GainnTrainnWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 81835CA21E5AA02600928E49 /* GainnTrainnWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		81835CAA1E5AA02600928E49 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81835CA91E5AA02600928E49 /* InterfaceController.swift */; };
+		81835CAC1E5AA02600928E49 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81835CAB1E5AA02600928E49 /* ExtensionDelegate.swift */; };
+		81835CAE1E5AA02600928E49 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81835CAD1E5AA02600928E49 /* NotificationController.swift */; };
+		81835CB01E5AA02600928E49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81835CAF1E5AA02600928E49 /* Assets.xcassets */; };
+		81835CB41E5AA02600928E49 /* GainnTrainnWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 81835C961E5AA02500928E49 /* GainnTrainnWatch.app */; };
+		81835CBE1E5AA04000928E49 /* HealthKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81835CBD1E5AA04000928E49 /* HealthKitHelper.swift */; };
+		81835CC21E5AA12E00928E49 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81835CC11E5AA12E00928E49 /* HealthKit.framework */; };
+		81835CC51E5AA19300928E49 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81835CC41E5AA19300928E49 /* HealthKit.framework */; };
+		81835CC71E5AA1FF00928E49 /* HealthKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81835CC61E5AA1FF00928E49 /* HealthKitHelper.swift */; };
+		81835D601E5B991A00928E49 /* WorkoutHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81835D5F1E5B991A00928E49 /* WorkoutHeaderView.swift */; };
+		81835D641E5BAEBD00928E49 /* WorkoutRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81835D631E5BAEBD00928E49 /* WorkoutRow.swift */; };
+		81835D661E5CD74400928E49 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81835D651E5CD74400928E49 /* FilterViewController.swift */; };
+		81BF6E841E5651F100DEC8D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BF6E831E5651F100DEC8D9 /* AppDelegate.swift */; };
+		81BF6E891E5651F100DEC8D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81BF6E871E5651F100DEC8D9 /* Main.storyboard */; };
+		81BF6E8B1E5651F100DEC8D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81BF6E8A1E5651F100DEC8D9 /* Assets.xcassets */; };
+		81BF6E8E1E5651F100DEC8D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81BF6E8C1E5651F100DEC8D9 /* LaunchScreen.storyboard */; };
+		81BF6E971E56554000DEC8D9 /* Workouts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 81BF6E951E56554000DEC8D9 /* Workouts.xcdatamodeld */; };
+		81BF6E9A1E5655F000DEC8D9 /* ImageTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BF6E991E5655F000DEC8D9 /* ImageTransformer.swift */; };
+		81BF6EA21E5657A900DEC8D9 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BF6E9C1E5657A900DEC8D9 /* Workout.swift */; };
+		81BF6EA41E5657A900DEC8D9 /* MasterSet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BF6E9E1E5657A900DEC8D9 /* MasterSet+CoreDataProperties.swift */; };
+		81BF6EA61E5657A900DEC8D9 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BF6EA01E5657A900DEC8D9 /* Exercise.swift */; };
+		81BF6EB11E565F8300DEC8D9 /* WorkoutFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BF6EB01E565F8300DEC8D9 /* WorkoutFeedViewController.swift */; };
+		81C348031E83288C00A80ED0 /* Journal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C348011E83288C00A80ED0 /* Journal+CoreDataClass.swift */; };
+		81C348041E83288C00A80ED0 /* Journal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C348021E83288C00A80ED0 /* Journal+CoreDataProperties.swift */; };
+		81D0D9CB1E82C87D00A474DC /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D0D9CA1E82C87D00A474DC /* JournalViewController.swift */; };
+		81D0D9CF1E82CA7400A474DC /* UIViewController+GainTrainExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D0D9CE1E82CA7400A474DC /* UIViewController+GainTrainExtension.swift */; };
+		81D0D9D11E82ED8500A474DC /* JournalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D0D9D01E82ED8500A474DC /* JournalTableViewCell.swift */; };
+		81DABCB81E8073720068A094 /* UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DABCB71E8073720068A094 /* UITableViewDataSource.swift */; };
+		81DABD8E1E8086940068A094 /* APIForGainTrain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81DABD8D1E80867A0068A094 /* APIForGainTrain.framework */; };
+		81DABD8F1E8086940068A094 /* APIForGainTrain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 81DABD8D1E80867A0068A094 /* APIForGainTrain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		81DABD931E8098070068A094 /* FetchedResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DABD921E8098070068A094 /* FetchedResultsTableViewController.swift */; };
+		81DABDB61E809FFC0068A094 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DABDB51E809FFC0068A094 /* CoreDataStack.swift */; };
+		81DABDB81E80B8720068A094 /* DatesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DABDB71E80B8720068A094 /* DatesTableViewController.swift */; };
+		81E7134D1E5663850070DFE7 /* WorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E7134C1E5663850070DFE7 /* WorkoutCell.swift */; };
+		81E7134F1E5663A10070DFE7 /* UniversalUIElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E7134E1E5663A10070DFE7 /* UniversalUIElements.swift */; };
+		81E713511E5671250070DFE7 /* WorkoutFetchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E713501E5671250070DFE7 /* WorkoutFetchDelegate.swift */; };
+		81E713551E5686CE0070DFE7 /* WorkoutDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E713541E5686CE0070DFE7 /* WorkoutDetailViewController.swift */; };
+		81F01BEE1EBB8D6C00F26F4B /* JournalEntry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F01BE61EBB8D6C00F26F4B /* JournalEntry+CoreDataClass.swift */; };
+		81F01BF01EBB8D6C00F26F4B /* JournalExercise+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F01BE81EBB8D6C00F26F4B /* JournalExercise+CoreDataClass.swift */; };
+		81F01BF21EBB8D6C00F26F4B /* JournalSets+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F01BEA1EBB8D6C00F26F4B /* JournalSets+CoreDataClass.swift */; };
+		81F01BF41EBB8D6C00F26F4B /* JournalReps+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F01BEC1EBB8D6C00F26F4B /* JournalReps+CoreDataClass.swift */; };
+		81F01BF71EBE820F00F26F4B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F01BF61EBE820F00F26F4B /* MainTabBarController.swift */; };
+		C52C9AE7417EDE162E9F3F71 /* Pods_GainnTrainnWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8072E1AFE3F2932FC770F38E /* Pods_GainnTrainnWatch_Extension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		81835CA41E5AA02600928E49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81BF6E781E5651F100DEC8D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81835CA11E5AA02600928E49;
+			remoteInfo = "GainnTrainnWatch Extension";
+		};
+		81835CB21E5AA02600928E49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81BF6E781E5651F100DEC8D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81835C951E5AA02500928E49;
+			remoteInfo = GainnTrainnWatch;
+		};
+		81DABD8C1E80867A0068A094 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81DABD881E80867A0068A094 /* APIForGainTrain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 81DABD541E8081E00068A094;
+			remoteInfo = APIForGainTrain;
+		};
+		81DABD901E8086940068A094 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81DABD881E80867A0068A094 /* APIForGainTrain.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 81DABD531E8081E00068A094;
+			remoteInfo = APIForGainTrain;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		81835CB81E5AA02600928E49 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				81835CA31E5AA02600928E49 /* GainnTrainnWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81835CBC1E5AA02600928E49 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				81835CB41E5AA02600928E49 /* GainnTrainnWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81DABD7D1E8084750068A094 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				81DABD8F1E8086940068A094 /* APIForGainTrain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0DE322538D8E7B09499D2CB1 /* Pods-GainnTrainnWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GainnTrainnWatch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GainnTrainnWatch Extension/Pods-GainnTrainnWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		116818DD902FD6A70F2DCC0B /* Pods-GainnTrainn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GainnTrainn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GainnTrainn/Pods-GainnTrainn.debug.xcconfig"; sourceTree = "<group>"; };
+		246CF13507CF4C4501BC5872 /* Pods-GainnTrainnWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GainnTrainnWatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-GainnTrainnWatch/Pods-GainnTrainnWatch.release.xcconfig"; sourceTree = "<group>"; };
+		8072E1AFE3F2932FC770F38E /* Pods_GainnTrainnWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GainnTrainnWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8107C1BF1E6672DA002EA6C4 /* RemoveAll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveAll.swift; sourceTree = "<group>"; };
+		8107E3861E5CEC2F004AF74F /* WorkoutFilterByCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutFilterByCollectionViewCell.swift; sourceTree = "<group>"; };
+		813DBE821E75FB6700A592E2 /* AddToView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddToView.xib; sourceTree = "<group>"; };
+		813DBE861E75FC8F00A592E2 /* AddToView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToView.swift; sourceTree = "<group>"; };
+		813DBE881E760FFD00A592E2 /* Alerter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerter.swift; sourceTree = "<group>"; };
+		813DBE921E7760CE00A592E2 /* Dates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dates.swift; sourceTree = "<group>"; };
+		8146AAFF1E71D1800037CB7C /* GainnTrainn-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GainnTrainn-Bridging-Header.h"; sourceTree = "<group>"; };
+		8146AB021E71D4C30037CB7C /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		8146AB041E71D79F0037CB7C /* VerticalCalendarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VerticalCalendarView.xib; sourceTree = "<group>"; };
+		8146AB081E733D760037CB7C /* EventKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventKitHelper.swift; sourceTree = "<group>"; };
+		814CB8881E788F3200C96E19 /* WorkoutHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkoutHeaderView.xib; sourceTree = "<group>"; };
+		81835C961E5AA02500928E49 /* GainnTrainnWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GainnTrainnWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81835C991E5AA02500928E49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		81835C9B1E5AA02500928E49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81835C9D1E5AA02500928E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81835CA21E5AA02600928E49 /* GainnTrainnWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GainnTrainnWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81835CA81E5AA02600928E49 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		81835CA91E5AA02600928E49 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		81835CAB1E5AA02600928E49 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		81835CAD1E5AA02600928E49 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		81835CAF1E5AA02600928E49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81835CB11E5AA02600928E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81835CBD1E5AA04000928E49 /* HealthKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitHelper.swift; sourceTree = "<group>"; };
+		81835CBF1E5AA12E00928E49 /* GainnTrainn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GainnTrainn.entitlements; sourceTree = "<group>"; };
+		81835CC11E5AA12E00928E49 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		81835CC31E5AA19300928E49 /* GainnTrainnWatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "GainnTrainnWatch Extension.entitlements"; sourceTree = "<group>"; };
+		81835CC41E5AA19300928E49 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		81835CC61E5AA1FF00928E49 /* HealthKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitHelper.swift; sourceTree = "<group>"; };
+		81835CC81E5AA35800928E49 /* GainnTrainnWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GainnTrainnWatch.entitlements; sourceTree = "<group>"; };
+		81835D5F1E5B991A00928E49 /* WorkoutHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutHeaderView.swift; sourceTree = "<group>"; };
+		81835D631E5BAEBD00928E49 /* WorkoutRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutRow.swift; sourceTree = "<group>"; };
+		81835D651E5CD74400928E49 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		81BF6E801E5651F100DEC8D9 /* GainnTrainn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GainnTrainn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81BF6E831E5651F100DEC8D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		81BF6E881E5651F100DEC8D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		81BF6E8A1E5651F100DEC8D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81BF6E8D1E5651F100DEC8D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81BF6E8F1E5651F100DEC8D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81BF6E961E56554000DEC8D9 /* Workouts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Workouts.xcdatamodel; sourceTree = "<group>"; };
+		81BF6E991E5655F000DEC8D9 /* ImageTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTransformer.swift; sourceTree = "<group>"; };
+		81BF6E9C1E5657A900DEC8D9 /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		81BF6E9E1E5657A900DEC8D9 /* MasterSet+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MasterSet+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		81BF6EA01E5657A900DEC8D9 /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		81BF6EB01E565F8300DEC8D9 /* WorkoutFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkoutFeedViewController.swift; path = ../WorkoutFeedViewController.swift; sourceTree = "<group>"; };
+		81C348011E83288C00A80ED0 /* Journal+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Journal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		81C348021E83288C00A80ED0 /* Journal+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Journal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		81D0D9CA1E82C87D00A474DC /* JournalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
+		81D0D9CE1E82CA7400A474DC /* UIViewController+GainTrainExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+GainTrainExtension.swift"; sourceTree = "<group>"; };
+		81D0D9D01E82ED8500A474DC /* JournalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalTableViewCell.swift; sourceTree = "<group>"; };
+		81DABCB71E8073720068A094 /* UITableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewDataSource.swift; sourceTree = "<group>"; };
+		81DABD881E80867A0068A094 /* APIForGainTrain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = APIForGainTrain.xcodeproj; path = APIForGainTrain/APIForGainTrain.xcodeproj; sourceTree = "<group>"; };
+		81DABD921E8098070068A094 /* FetchedResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResultsTableViewController.swift; sourceTree = "<group>"; };
+		81DABDB51E809FFC0068A094 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = ../CoreDataStack.swift; sourceTree = "<group>"; };
+		81DABDB71E80B8720068A094 /* DatesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatesTableViewController.swift; sourceTree = "<group>"; };
+		81E7134C1E5663850070DFE7 /* WorkoutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutCell.swift; sourceTree = "<group>"; };
+		81E7134E1E5663A10070DFE7 /* UniversalUIElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversalUIElements.swift; sourceTree = "<group>"; };
+		81E713501E5671250070DFE7 /* WorkoutFetchDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutFetchDelegate.swift; sourceTree = "<group>"; };
+		81E713541E5686CE0070DFE7 /* WorkoutDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutDetailViewController.swift; sourceTree = "<group>"; };
+		81F01BE61EBB8D6C00F26F4B /* JournalEntry+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JournalEntry+CoreDataClass.swift"; sourceTree = "<group>"; };
+		81F01BE81EBB8D6C00F26F4B /* JournalExercise+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JournalExercise+CoreDataClass.swift"; sourceTree = "<group>"; };
+		81F01BEA1EBB8D6C00F26F4B /* JournalSets+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JournalSets+CoreDataClass.swift"; sourceTree = "<group>"; };
+		81F01BEC1EBB8D6C00F26F4B /* JournalReps+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JournalReps+CoreDataClass.swift"; sourceTree = "<group>"; };
+		81F01BF61EBE820F00F26F4B /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		89B903853C753484F2F76BCF /* Pods-GainnTrainnWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GainnTrainnWatch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GainnTrainnWatch/Pods-GainnTrainnWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		C58D02B6DF5BB51415F11F5D /* Pods_GainnTrainn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GainnTrainn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C66C168026143B71D169356A /* Pods-GainnTrainn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GainnTrainn.release.xcconfig"; path = "Pods/Target Support Files/Pods-GainnTrainn/Pods-GainnTrainn.release.xcconfig"; sourceTree = "<group>"; };
+		CA81304FDD2A685B4719D4B2 /* Pods-GainnTrainnWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GainnTrainnWatch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-GainnTrainnWatch Extension/Pods-GainnTrainnWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
+		F00A0BDBD5808FB2EE6B726F /* Pods_GainnTrainnWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GainnTrainnWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		808A7B9DE79C2124C9A4AEAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E461432E15D94D04531822B /* Pods_GainnTrainnWatch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81835C9F1E5AA02600928E49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81835CC51E5AA19300928E49 /* HealthKit.framework in Frameworks */,
+				C52C9AE7417EDE162E9F3F71 /* Pods_GainnTrainnWatch_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81BF6E7D1E5651F100DEC8D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81835CC21E5AA12E00928E49 /* HealthKit.framework in Frameworks */,
+				81DABD8E1E8086940068A094 /* APIForGainTrain.framework in Frameworks */,
+				14896FC1FC87346F83BFB5D8 /* Pods_GainnTrainn.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04A23A082A0C9C1C886B9D51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				116818DD902FD6A70F2DCC0B /* Pods-GainnTrainn.debug.xcconfig */,
+				C66C168026143B71D169356A /* Pods-GainnTrainn.release.xcconfig */,
+				89B903853C753484F2F76BCF /* Pods-GainnTrainnWatch.debug.xcconfig */,
+				246CF13507CF4C4501BC5872 /* Pods-GainnTrainnWatch.release.xcconfig */,
+				0DE322538D8E7B09499D2CB1 /* Pods-GainnTrainnWatch Extension.debug.xcconfig */,
+				CA81304FDD2A685B4719D4B2 /* Pods-GainnTrainnWatch Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8107E3881E5CF019004AF74F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				813DBE821E75FB6700A592E2 /* AddToView.xib */,
+				813DBE861E75FC8F00A592E2 /* AddToView.swift */,
+				8107E3861E5CEC2F004AF74F /* WorkoutFilterByCollectionViewCell.swift */,
+				81D0D9D01E82ED8500A474DC /* JournalTableViewCell.swift */,
+				8107C1BF1E6672DA002EA6C4 /* RemoveAll.swift */,
+				8146AB041E71D79F0037CB7C /* VerticalCalendarView.xib */,
+				814CB8881E788F3200C96E19 /* WorkoutHeaderView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		81835C971E5AA02500928E49 /* GainnTrainnWatch */ = {
+			isa = PBXGroup;
+			children = (
+				81835CC81E5AA35800928E49 /* GainnTrainnWatch.entitlements */,
+				81835C981E5AA02500928E49 /* Interface.storyboard */,
+				81835C9B1E5AA02500928E49 /* Assets.xcassets */,
+				81835C9D1E5AA02500928E49 /* Info.plist */,
+			);
+			path = GainnTrainnWatch;
+			sourceTree = "<group>";
+		};
+		81835CA61E5AA02600928E49 /* GainnTrainnWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				81835CC31E5AA19300928E49 /* GainnTrainnWatch Extension.entitlements */,
+				81835CA91E5AA02600928E49 /* InterfaceController.swift */,
+				81835CAB1E5AA02600928E49 /* ExtensionDelegate.swift */,
+				81835CBD1E5AA04000928E49 /* HealthKitHelper.swift */,
+				81835CAD1E5AA02600928E49 /* NotificationController.swift */,
+				81835D631E5BAEBD00928E49 /* WorkoutRow.swift */,
+				81835CAF1E5AA02600928E49 /* Assets.xcassets */,
+				81835CB11E5AA02600928E49 /* Info.plist */,
+				81835CA71E5AA02600928E49 /* Supporting Files */,
+			);
+			path = "GainnTrainnWatch Extension";
+			sourceTree = "<group>";
+		};
+		81835CA71E5AA02600928E49 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				81835CA81E5AA02600928E49 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		81835CC01E5AA12E00928E49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81835CC41E5AA19300928E49 /* HealthKit.framework */,
+				81835CC11E5AA12E00928E49 /* HealthKit.framework */,
+				C58D02B6DF5BB51415F11F5D /* Pods_GainnTrainn.framework */,
+				F00A0BDBD5808FB2EE6B726F /* Pods_GainnTrainnWatch.framework */,
+				8072E1AFE3F2932FC770F38E /* Pods_GainnTrainnWatch_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		81BF6E771E5651F100DEC8D9 = {
+			isa = PBXGroup;
+			children = (
+				81DABD881E80867A0068A094 /* APIForGainTrain.xcodeproj */,
+				81BF6E821E5651F100DEC8D9 /* GainnTrainn */,
+				81835C971E5AA02500928E49 /* GainnTrainnWatch */,
+				81835CA61E5AA02600928E49 /* GainnTrainnWatch Extension */,
+				81BF6E811E5651F100DEC8D9 /* Products */,
+				81835CC01E5AA12E00928E49 /* Frameworks */,
+				04A23A082A0C9C1C886B9D51 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		81BF6E811E5651F100DEC8D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81BF6E801E5651F100DEC8D9 /* GainnTrainn.app */,
+				81835C961E5AA02500928E49 /* GainnTrainnWatch.app */,
+				81835CA21E5AA02600928E49 /* GainnTrainnWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81BF6E821E5651F100DEC8D9 /* GainnTrainn */ = {
+			isa = PBXGroup;
+			children = (
+				81835CBF1E5AA12E00928E49 /* GainnTrainn.entitlements */,
+				81BF6E8A1E5651F100DEC8D9 /* Assets.xcassets */,
+				81BF6E831E5651F100DEC8D9 /* AppDelegate.swift */,
+				8146AB081E733D760037CB7C /* EventKitHelper.swift */,
+				81E713521E56712B0070DFE7 /* Delegates */,
+				81BF6EAB1E565DE400DEC8D9 /* HelperClasses */,
+				81BF6E981E56554A00DEC8D9 /* CoreDataStuff */,
+				81BF6E871E5651F100DEC8D9 /* Main.storyboard */,
+				81835D5F1E5B991A00928E49 /* WorkoutHeaderView.swift */,
+				81E7134C1E5663850070DFE7 /* WorkoutCell.swift */,
+				81E7134E1E5663A10070DFE7 /* UniversalUIElements.swift */,
+				81BF6E8C1E5651F100DEC8D9 /* LaunchScreen.storyboard */,
+				81BF6E8F1E5651F100DEC8D9 /* Info.plist */,
+				8107E3881E5CF019004AF74F /* Views */,
+				81E713531E5686B90070DFE7 /* ViewControllers */,
+				8146AAFF1E71D1800037CB7C /* GainnTrainn-Bridging-Header.h */,
+			);
+			path = GainnTrainn;
+			sourceTree = "<group>";
+		};
+		81BF6E981E56554A00DEC8D9 /* CoreDataStuff */ = {
+			isa = PBXGroup;
+			children = (
+				81F01BE61EBB8D6C00F26F4B /* JournalEntry+CoreDataClass.swift */,
+				81F01BE81EBB8D6C00F26F4B /* JournalExercise+CoreDataClass.swift */,
+				81F01BEA1EBB8D6C00F26F4B /* JournalSets+CoreDataClass.swift */,
+				81F01BEC1EBB8D6C00F26F4B /* JournalReps+CoreDataClass.swift */,
+				81C348011E83288C00A80ED0 /* Journal+CoreDataClass.swift */,
+				81C348021E83288C00A80ED0 /* Journal+CoreDataProperties.swift */,
+				81DABDB51E809FFC0068A094 /* CoreDataStack.swift */,
+				813DBE921E7760CE00A592E2 /* Dates.swift */,
+				81BF6EA01E5657A900DEC8D9 /* Exercise.swift */,
+				81BF6E9E1E5657A900DEC8D9 /* MasterSet+CoreDataProperties.swift */,
+				81BF6E991E5655F000DEC8D9 /* ImageTransformer.swift */,
+				81BF6E9C1E5657A900DEC8D9 /* Workout.swift */,
+				81BF6E951E56554000DEC8D9 /* Workouts.xcdatamodeld */,
+				81DABCB71E8073720068A094 /* UITableViewDataSource.swift */,
+			);
+			name = CoreDataStuff;
+			sourceTree = "<group>";
+		};
+		81BF6EAB1E565DE400DEC8D9 /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				81D0D9CD1E82CA6400A474DC /* Extensions */,
+				81835CC61E5AA1FF00928E49 /* HealthKitHelper.swift */,
+				813DBE881E760FFD00A592E2 /* Alerter.swift */,
+			);
+			name = HelperClasses;
+			sourceTree = "<group>";
+		};
+		81D0D9CD1E82CA6400A474DC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				81D0D9CE1E82CA7400A474DC /* UIViewController+GainTrainExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		81DABD891E80867A0068A094 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81DABD8D1E80867A0068A094 /* APIForGainTrain.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81E713521E56712B0070DFE7 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				81E713501E5671250070DFE7 /* WorkoutFetchDelegate.swift */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		81E713531E5686B90070DFE7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				81F01BF61EBE820F00F26F4B /* MainTabBarController.swift */,
+				8146AB021E71D4C30037CB7C /* CalendarViewController.swift */,
+				81DABDB71E80B8720068A094 /* DatesTableViewController.swift */,
+				81DABD921E8098070068A094 /* FetchedResultsTableViewController.swift */,
+				81835D651E5CD74400928E49 /* FilterViewController.swift */,
+				81D0D9CA1E82C87D00A474DC /* JournalViewController.swift */,
+				81BF6EB01E565F8300DEC8D9 /* WorkoutFeedViewController.swift */,
+				81E713541E5686CE0070DFE7 /* WorkoutDetailViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81835C951E5AA02500928E49 /* GainnTrainnWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81835CB91E5AA02600928E49 /* Build configuration list for PBXNativeTarget "GainnTrainnWatch" */;
+			buildPhases = (
+				08CAB6BFADE38B9C0BED0F9D /* [CP] Check Pods Manifest.lock */,
+				81835C941E5AA02500928E49 /* Resources */,
+				81835CB81E5AA02600928E49 /* Embed App Extensions */,
+				808A7B9DE79C2124C9A4AEAF /* Frameworks */,
+				C786C2906E192F7437075B2B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81835CA51E5AA02600928E49 /* PBXTargetDependency */,
+			);
+			name = GainnTrainnWatch;
+			productName = GainnTrainnWatch;
+			productReference = 81835C961E5AA02500928E49 /* GainnTrainnWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		81835CA11E5AA02600928E49 /* GainnTrainnWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81835CB51E5AA02600928E49 /* Build configuration list for PBXNativeTarget "GainnTrainnWatch Extension" */;
+			buildPhases = (
+				FA30C071CABE15AAC6C744D3 /* [CP] Check Pods Manifest.lock */,
+				81835C9E1E5AA02600928E49 /* Sources */,
+				81835C9F1E5AA02600928E49 /* Frameworks */,
+				81835CA01E5AA02600928E49 /* Resources */,
+				F227741ED342EAAEC6BC3DFE /* [CP] Embed Pods Frameworks */,
+				198306EB42E80B5F35B05F1F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GainnTrainnWatch Extension";
+			productName = "GainnTrainnWatch Extension";
+			productReference = 81835CA21E5AA02600928E49 /* GainnTrainnWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		81BF6E7F1E5651F100DEC8D9 /* GainnTrainn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81BF6E921E5651F100DEC8D9 /* Build configuration list for PBXNativeTarget "GainnTrainn" */;
+			buildPhases = (
+				8FA5856BB52852E193B77F6B /* [CP] Check Pods Manifest.lock */,
+				81BF6E7C1E5651F100DEC8D9 /* Sources */,
+				81BF6E7D1E5651F100DEC8D9 /* Frameworks */,
+				81BF6E7E1E5651F100DEC8D9 /* Resources */,
+				81835CBC1E5AA02600928E49 /* Embed Watch Content */,
+				048F8C31FA79B965D2E49C70 /* [CP] Embed Pods Frameworks */,
+				A2245BD735144A32F61EB31C /* [CP] Copy Pods Resources */,
+				81DABD7D1E8084750068A094 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81835CB31E5AA02600928E49 /* PBXTargetDependency */,
+				81DABD911E8086940068A094 /* PBXTargetDependency */,
+			);
+			name = GainnTrainn;
+			productName = GainnTrainn;
+			productReference = 81BF6E801E5651F100DEC8D9 /* GainnTrainn.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81BF6E781E5651F100DEC8D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Rich;
+				TargetAttributes = {
+					81835C951E5AA02500928E49 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = RT665D95TU;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					81835CA11E5AA02600928E49 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = RT665D95TU;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.HealthKit.watchos = {
+								enabled = 1;
+							};
+						};
+					};
+					81BF6E7F1E5651F100DEC8D9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = RT665D95TU;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 81BF6E7B1E5651F100DEC8D9 /* Build configuration list for PBXProject "GainnTrainn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 81BF6E771E5651F100DEC8D9;
+			productRefGroup = 81BF6E811E5651F100DEC8D9 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 81DABD891E80867A0068A094 /* Products */;
+					ProjectRef = 81DABD881E80867A0068A094 /* APIForGainTrain.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				81BF6E7F1E5651F100DEC8D9 /* GainnTrainn */,
+				81835C951E5AA02500928E49 /* GainnTrainnWatch */,
+				81835CA11E5AA02600928E49 /* GainnTrainnWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		81DABD8D1E80867A0068A094 /* APIForGainTrain.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = APIForGainTrain.framework;
+			remoteRef = 81DABD8C1E80867A0068A094 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81835C941E5AA02500928E49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81835C9C1E5AA02500928E49 /* Assets.xcassets in Resources */,
+				81835C9A1E5AA02500928E49 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81835CA01E5AA02600928E49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81835CB01E5AA02600928E49 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81BF6E7E1E5651F100DEC8D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81BF6E8E1E5651F100DEC8D9 /* LaunchScreen.storyboard in Resources */,
+				814CB8891E788F3200C96E19 /* WorkoutHeaderView.xib in Resources */,
+				81BF6E8B1E5651F100DEC8D9 /* Assets.xcassets in Resources */,
+				8146AB051E71D79F0037CB7C /* VerticalCalendarView.xib in Resources */,
+				81BF6E891E5651F100DEC8D9 /* Main.storyboard in Resources */,
+				813DBE831E75FB6700A592E2 /* AddToView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		048F8C31FA79B965D2E49C70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GainnTrainn/Pods-GainnTrainn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		08CAB6BFADE38B9C0BED0F9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		198306EB42E80B5F35B05F1F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GainnTrainnWatch Extension/Pods-GainnTrainnWatch Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FA5856BB52852E193B77F6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A2245BD735144A32F61EB31C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GainnTrainn/Pods-GainnTrainn-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C786C2906E192F7437075B2B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GainnTrainnWatch/Pods-GainnTrainnWatch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F227741ED342EAAEC6BC3DFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GainnTrainnWatch Extension/Pods-GainnTrainnWatch Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA30C071CABE15AAC6C744D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81835C9E1E5AA02600928E49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81835CAE1E5AA02600928E49 /* NotificationController.swift in Sources */,
+				81835D641E5BAEBD00928E49 /* WorkoutRow.swift in Sources */,
+				81835CAC1E5AA02600928E49 /* ExtensionDelegate.swift in Sources */,
+				81835CBE1E5AA04000928E49 /* HealthKitHelper.swift in Sources */,
+				81835CAA1E5AA02600928E49 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81BF6E7C1E5651F100DEC8D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8146AB031E71D4C30037CB7C /* CalendarViewController.swift in Sources */,
+				81DABD931E8098070068A094 /* FetchedResultsTableViewController.swift in Sources */,
+				8146AB091E733D760037CB7C /* EventKitHelper.swift in Sources */,
+				81BF6EA41E5657A900DEC8D9 /* MasterSet+CoreDataProperties.swift in Sources */,
+				81E713551E5686CE0070DFE7 /* WorkoutDetailViewController.swift in Sources */,
+				81F01BF21EBB8D6C00F26F4B /* JournalSets+CoreDataClass.swift in Sources */,
+				81F01BF01EBB8D6C00F26F4B /* JournalExercise+CoreDataClass.swift in Sources */,
+				81E7134D1E5663850070DFE7 /* WorkoutCell.swift in Sources */,
+				81835D661E5CD74400928E49 /* FilterViewController.swift in Sources */,
+				81C348031E83288C00A80ED0 /* Journal+CoreDataClass.swift in Sources */,
+				81E713511E5671250070DFE7 /* WorkoutFetchDelegate.swift in Sources */,
+				8107E3871E5CEC2F004AF74F /* WorkoutFilterByCollectionViewCell.swift in Sources */,
+				81BF6EA21E5657A900DEC8D9 /* Workout.swift in Sources */,
+				81E7134F1E5663A10070DFE7 /* UniversalUIElements.swift in Sources */,
+				81835D601E5B991A00928E49 /* WorkoutHeaderView.swift in Sources */,
+				81835CC71E5AA1FF00928E49 /* HealthKitHelper.swift in Sources */,
+				813DBE931E7760CE00A592E2 /* Dates.swift in Sources */,
+				81F01BF71EBE820F00F26F4B /* MainTabBarController.swift in Sources */,
+				81DABDB81E80B8720068A094 /* DatesTableViewController.swift in Sources */,
+				8107C1C01E6672DA002EA6C4 /* RemoveAll.swift in Sources */,
+				81DABDB61E809FFC0068A094 /* CoreDataStack.swift in Sources */,
+				813DBE891E760FFD00A592E2 /* Alerter.swift in Sources */,
+				81BF6E971E56554000DEC8D9 /* Workouts.xcdatamodeld in Sources */,
+				81BF6EA61E5657A900DEC8D9 /* Exercise.swift in Sources */,
+				81BF6EB11E565F8300DEC8D9 /* WorkoutFeedViewController.swift in Sources */,
+				81C348041E83288C00A80ED0 /* Journal+CoreDataProperties.swift in Sources */,
+				81BF6E841E5651F100DEC8D9 /* AppDelegate.swift in Sources */,
+				81BF6E9A1E5655F000DEC8D9 /* ImageTransformer.swift in Sources */,
+				81F01BF41EBB8D6C00F26F4B /* JournalReps+CoreDataClass.swift in Sources */,
+				81D0D9D11E82ED8500A474DC /* JournalTableViewCell.swift in Sources */,
+				81DABCB81E8073720068A094 /* UITableViewDataSource.swift in Sources */,
+				81D0D9CB1E82C87D00A474DC /* JournalViewController.swift in Sources */,
+				81F01BEE1EBB8D6C00F26F4B /* JournalEntry+CoreDataClass.swift in Sources */,
+				81D0D9CF1E82CA7400A474DC /* UIViewController+GainTrainExtension.swift in Sources */,
+				813DBE871E75FC8F00A592E2 /* AddToView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		81835CA51E5AA02600928E49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81835CA11E5AA02600928E49 /* GainnTrainnWatch Extension */;
+			targetProxy = 81835CA41E5AA02600928E49 /* PBXContainerItemProxy */;
+		};
+		81835CB31E5AA02600928E49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81835C951E5AA02500928E49 /* GainnTrainnWatch */;
+			targetProxy = 81835CB21E5AA02600928E49 /* PBXContainerItemProxy */;
+		};
+		81DABD911E8086940068A094 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = APIForGainTrain;
+			targetProxy = 81DABD901E8086940068A094 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		81835C981E5AA02500928E49 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81835C991E5AA02500928E49 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		81BF6E871E5651F100DEC8D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81BF6E881E5651F100DEC8D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		81BF6E8C1E5651F100DEC8D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81BF6E8D1E5651F100DEC8D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81835CB61E5AA02600928E49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DE322538D8E7B09499D2CB1 /* Pods-GainnTrainnWatch Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "GainnTrainnWatch Extension/GainnTrainnWatch Extension.entitlements";
+				DEVELOPMENT_TEAM = RT665D95TU;
+				INFOPLIST_FILE = "GainnTrainnWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com-blanchard-gs.GainnTrainn.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		81835CB71E5AA02600928E49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA81304FDD2A685B4719D4B2 /* Pods-GainnTrainnWatch Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "GainnTrainnWatch Extension/GainnTrainnWatch Extension.entitlements";
+				DEVELOPMENT_TEAM = RT665D95TU;
+				INFOPLIST_FILE = "GainnTrainnWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com-blanchard-gs.GainnTrainn.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		81835CBA1E5AA02600928E49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89B903853C753484F2F76BCF /* Pods-GainnTrainnWatch.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GainnTrainnWatch/GainnTrainnWatch.entitlements;
+				DEVELOPMENT_TEAM = RT665D95TU;
+				IBSC_MODULE = GainnTrainnWatch_Extension;
+				INFOPLIST_FILE = GainnTrainnWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com-blanchard-gs.GainnTrainn.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		81835CBB1E5AA02600928E49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 246CF13507CF4C4501BC5872 /* Pods-GainnTrainnWatch.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GainnTrainnWatch/GainnTrainnWatch.entitlements;
+				DEVELOPMENT_TEAM = RT665D95TU;
+				IBSC_MODULE = GainnTrainnWatch_Extension;
+				INFOPLIST_FILE = GainnTrainnWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com-blanchard-gs.GainnTrainn.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		81BF6E901E5651F100DEC8D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		81BF6E911E5651F100DEC8D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81BF6E931E5651F100DEC8D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 116818DD902FD6A70F2DCC0B /* Pods-GainnTrainn.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = GainnTrainn/GainnTrainn.entitlements;
+				DEVELOPMENT_TEAM = RT665D95TU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GainnTrainn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com-blanchard-gs.GainnTrainn";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		81BF6E941E5651F100DEC8D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C66C168026143B71D169356A /* Pods-GainnTrainn.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = GainnTrainn/GainnTrainn.entitlements;
+				DEVELOPMENT_TEAM = RT665D95TU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GainnTrainn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com-blanchard-gs.GainnTrainn";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81835CB51E5AA02600928E49 /* Build configuration list for PBXNativeTarget "GainnTrainnWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81835CB61E5AA02600928E49 /* Debug */,
+				81835CB71E5AA02600928E49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81835CB91E5AA02600928E49 /* Build configuration list for PBXNativeTarget "GainnTrainnWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81835CBA1E5AA02600928E49 /* Debug */,
+				81835CBB1E5AA02600928E49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81BF6E7B1E5651F100DEC8D9 /* Build configuration list for PBXProject "GainnTrainn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81BF6E901E5651F100DEC8D9 /* Debug */,
+				81BF6E911E5651F100DEC8D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81BF6E921E5651F100DEC8D9 /* Build configuration list for PBXNativeTarget "GainnTrainn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81BF6E931E5651F100DEC8D9 /* Debug */,
+				81BF6E941E5651F100DEC8D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		81BF6E951E56554000DEC8D9 /* Workouts.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				81BF6E961E56554000DEC8D9 /* Workouts.xcdatamodel */,
+			);
+			currentVersion = 81BF6E961E56554000DEC8D9 /* Workouts.xcdatamodel */;
+			path = Workouts.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 81BF6E781E5651F100DEC8D9 /* Project object */;
+}
